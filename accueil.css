@@ -420,11 +420,20 @@ header {
     margin-left: 22px;
 }
 
-.footer_mentions li{
+.footer_mentions li {
+    list-style: none;
+}
+
+.footer_mentions a{
     color: white; 
     text-decoration: none; 
     list-style: none;
     margin: 1px 0;
+}
+
+.footer_mentions a:hover {
+    color: green;
+    transition: color 0.4s ease;
 }
 
 /* Top right */
@@ -449,6 +458,7 @@ header {
     border: none;
     border-radius: 5px;
     resize: none;
+    outline: none;
 }
 
 .right_footer textarea {
@@ -469,6 +479,10 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.right_footer button:hover {
+    background-color: rgba(0, 149, 0, 0.714);
 }
 
 /* Bot */

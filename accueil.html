@@ -158,55 +158,30 @@
                                 explore_nearby
                                 </span>
                         </div>
-                        <p>11 rue Louis Braille, Mons-en-Baroeul (59370)</p>
+                        <p>68 rue du vieil dieu, Comines (59560)</p>
                     </div>
                     <ul class="footer_mentions">
-                        <li>Mentions Légales</li>
-                        <li>Conditions Générales de Vente</li>
-                        <li>Politique de confidentialité</li>
+                        <li><a href="mentions.html">Mentions Légales</a></li>
+                        <li><a href="mentions.html">Politique de confidentialité</a></li>
                     </ul>
                 </div>  
-                <div id="map" class="map_footer"></div> <!-- Conteneur pour la carte -->
+                <div id="map" class="map_footer"></div>
             </div>
             <form class="right_footer">
                 <h1>Nous contacter</h1>
-
-                <input type="text" id="name" name="name" required placeholder="Votre nom" />
-                <input type="email" id="email" name="email" required placeholder="Votre email" />
-                <textarea id="message" name="message" required placeholder="Message"></textarea>
-
-                <button type="submit">Envoyer</button>
-            </form>
+                <form>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom" autocomplete="off"/>
+                    <input type="email" id="email" name="email" required placeholder="Votre email" autocomplete="off"/>
+                    <textarea id="message" name="message" required placeholder="Message"></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
         </div>
         <div class='bot_footer'>
             <div><p>© 2024 CATEX, Tous droits reservés.</p></div>
         </div>
-
-
     </footer>
 
-
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Coordonnées de l'adresse (latitude et longitude)
-            const location = [50.749454498291016, 3.022520065307617]; 
-            
-            // Créer la carte
-            const map = L.map('map').setView(location, 14); // Centre de la carte et niveau de zoom
-            
-            // Ajouter un tile layer
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-            
-            // Ajouter un marqueur à la carte
-            L.marker(location).addTo(map)
-                .bindPopup('Cadex, France <br> 68 rue du vieil dieu, Comines')
-                .openPopup();
-        });
-    </script>
-    
     <script src="./index.js"></script>
 </body>
 </html>
