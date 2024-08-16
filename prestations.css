@@ -76,6 +76,69 @@ header {
 
 
 
+/* Main */
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section_info {
+    padding: 6rem 0;
+    margin: auto;
+    width: 80%;
+    line-height: 1.7rem;
+}
+
+.section_info h1 {
+    margin-bottom: 3rem;
+}
+
+
+
+
+.contact_info {
+    background-color: rgb(213, 213, 213);
+    color: white;
+}
+
+.contact_info h1 {
+    margin: 3rem 0;
+}
+
+.contact_info button {
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    width: 40vh;
+    padding : 0.8rem 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.contact_info button:hover{
+    background-color: green;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 
@@ -86,7 +149,6 @@ header {
     display: flex;
     flex-direction: row;
     padding : 0 1rem;
-    margin-top: 2rem;
 }
 
 .left_footer {

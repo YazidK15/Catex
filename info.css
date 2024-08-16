@@ -50,9 +50,9 @@ header {
 }
 
 .brand_name img {
-    max-height: 100%; /* Limite la hauteur de l'image à celle du conteneur parent */
-    height: 60px; /* Vous pouvez ajuster cette valeur pour une hauteur spécifique */
-    object-fit: contain; /* Assure que l'image conserve ses proportions */
+    max-height: 100%; 
+    height: 60px; 
+    object-fit: contain; 
 }
 
 .nav_link {
@@ -89,7 +89,7 @@ main {
 }
 
 .jumbotron_info {
-    background-image: url(./assets/images/jumbotron.jpeg);
+    background-image: url(./assets/images/main.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -124,9 +124,9 @@ main {
 }
 
 .process-container img {
-    width: 100%; /* Image prend toute la largeur du conteneur */
-    height: 350px; /* Maintenir le ratio de l'image */
-    display: block; /* Enlever l'espace en bas de l'image */
+    width: 100%; 
+    height: 350px; 
+    display: block; 
     object-fit: cover;
 }
 
@@ -303,8 +303,8 @@ main {
 /* Map */
 
 #map {
-    height: 75%; /* Définir une hauteur */
-    width: 70%;   /* Largeur à 100% */
+    height: 75%; 
+    width: 70%;  
     border-radius: 5px;
 }
 
