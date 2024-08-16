@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(165, 165, 165, 0.5); 
+    height: 6rem;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#navigation_links {
+    display: flex;
+    flex-direction: row;
+    list-style : none;
+    margin-left: auto;
+}
+
+#navigation_links a {
+    margin-right: 2rem;
+    color: black;
+}
+
+#navigation_links a:hover {
+    color: rgb(0, 149, 0);
+    transition: color 0.3s ease;
+}
+
+.phone_number {
+    pointer-events: none;
+}
+
+.brand_name img {
+    max-height: 100%; /* Limite la hauteur de l'image à celle du conteneur parent */
+    height: 60px; /* Vous pouvez ajuster cette valeur pour une hauteur spécifique */
+    object-fit: contain; /* Assure que l'image conserve ses proportions */
+}
+
+.nav_link {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.divider {
+    margin-right: 10px;
+    border-right: 1px solid rgb(0, 0, 0);
+}
