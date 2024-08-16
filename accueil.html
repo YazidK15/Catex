@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./accueil.css">
     <link rel="icon" href="./assets/images/icon.png">
     <title>Accueil</title>
@@ -95,9 +97,115 @@
             </div>
             <a href="prestations.html" class="view-all">Voir tout</a>
         </div>
-        
+
+        <div class='section_view'>
+            <h1>Clients satisfaits</h1>
+            <div class='view_container'>
+                <div class='view_box'>
+                    <div class='view_description'>
+                        <div class="view_image">
+                            <img src="./assets/images/cuisine.jpeg" alt="">
+                        </div>
+                        <p>« Excellent service de rénovation ! L’équipe a transformé notre espace avec professionnalisme et précision. Très satisfait du résultat.»</p>
+                        <h4>Linda T.</h4>
+                    </div>
+                </div>
+                <div class='view_box'>
+                    <div class='view_description'>
+                        <div class="view_image">
+                            <img src="./assets/images/cuisine2.png" alt="">
+                        </div>
+                        <p>« Un travail de qualité pour notre cuisine et salle de bains. Créatifs, réactifs et respectueux des délais. Hautement recommandés ! »</p>
+                        <h4>Damien B.</h4>
+                    </div>
+                </div>
+                <div class='view_box'>
+                    <div class='view_description'>
+                        <div class="view_image">
+                            <img src="./assets/images/salon.png" alt="">
+                        </div>
+                        <p>« Super expérience avec Catex. Construction d’extension réalisée avec soin et efficacité. Service impeccable.</p>
+                        <h4>Farid C.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>      
     </main>
-    <footer></footer>
+
+
+    <footer>
+        <div class='top_footer'>
+            <div class='left_footer'>
+                <div class='description_footer'>
+                    <div class='footer_title'>
+                        <div>
+                            <img src="./assets/images/logoo.png"alt="logo CATEX" />
+                        </div>
+                        <h4>Catex</h4>
+                    </div>
+                    <div class='footer_number'>
+                        <div>
+                            <span class="material-symbols-outlined icon">
+                                call
+                                </span>
+                        </div>
+                        <p>06.21.13.64.57</p>
+                    </div>
+                    <p>CATEX Environnement est une entreprise générale du bâtiment.</p>
+                    <div class='footer_adress'>
+                        <div>
+                            <span class="material-symbols-outlined icon">
+                                explore_nearby
+                                </span>
+                        </div>
+                        <p>11 rue Louis Braille, Mons-en-Baroeul (59370)</p>
+                    </div>
+                    <ul class="footer_mentions">
+                        <li>Mentions Légales</li>
+                        <li>Conditions Générales de Vente</li>
+                        <li>Politique de confidentialité</li>
+                    </ul>
+                </div>  
+                <div id="map" class="map_footer"></div> <!-- Conteneur pour la carte -->
+            </div>
+            <form class="right_footer">
+                <h1>Nous contacter</h1>
+
+                <input type="text" id="name" name="name" required placeholder="Votre nom" />
+                <input type="email" id="email" name="email" required placeholder="Votre email" />
+                <textarea id="message" name="message" required placeholder="Message"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        <div class='bot_footer'>
+            <div><p>© 2024 CATEX, Tous droits reservés.</p></div>
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Coordonnées de l'adresse (latitude et longitude)
+            const location = [50.749454498291016, 3.022520065307617]; 
+            
+            // Créer la carte
+            const map = L.map('map').setView(location, 14); // Centre de la carte et niveau de zoom
+            
+            // Ajouter un tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            
+            // Ajouter un marqueur à la carte
+            L.marker(location).addTo(map)
+                .bindPopup('Cadex, France <br> 68 rue du vieil dieu, Comines')
+                .openPopup();
+        });
+    </script>
     
     <script src="./index.js"></script>
 </body>
