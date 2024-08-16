@@ -462,8 +462,8 @@ header {
 }
 
 .right_footer button {
-    background-color: yellow;
-    color: black;
+    background-color: green;
+    color: white;
     font-weight: bold;
     padding: 8px 40px;
     border: none;
