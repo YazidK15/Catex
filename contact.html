@@ -41,15 +41,15 @@
             <p class="contact_phone">06 21 13 64 57</p>
         </div>
         <div class="form-container">
-            <form class="right_footer">
+            <form class="right_footer" id="contact-form">
                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Prénom*</label>
-                        <input type="text" id="name" name="name" required autocomplete="off"/>
-                    </div>
                     <div class="form-group">
                         <label for="surname">Nom*</label>
                         <input type="text" id="surname" name="surname" required autocomplete="off"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Prénom*</label>
+                        <input type="text" id="name" name="name" required autocomplete="off"/>
                     </div>
                 </div>
                 <div class="form-row">
@@ -61,14 +61,6 @@
                         <label for="phone">Téléphone</label>
                         <input type="phone" id="phone" name="phone"  autocomplete="off"/>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="adresse">Adresse</label>
-                    <input type="text" id="adresse" name="adresse" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label for="objet">Objet</label>
-                    <input type="text" id="objet" name="objet" autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="message">Rédigez votre message ici...</label>
@@ -89,6 +81,11 @@
         </div>
     </footer>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="form-handler.js"></script>
+
+
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
     const location = [50.749454498291016, 3.022520065307617];   
@@ -103,8 +100,6 @@
         .bindPopup('Cadex, France <br> 68 rue du vieil dieu, Comines')
         .openPopup();
 });
-
-
     </script>
 </body>
 </html>

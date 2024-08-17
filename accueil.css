@@ -205,6 +205,7 @@ header {
 .choice_description h4 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    color: #A26028;
 }
 
 
@@ -364,27 +365,23 @@ header {
     background-color: #181818;
     color: white;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
+    align-items: center;
     padding : 0 1rem;
     margin-top: 2rem;
+    gap: 30px;
 }
 
-.left_footer {
-    display: flex;
-    align-items: center;
-    flex: 2;
-    margin-right: 3rem;
-}
 
 .description_footer {
-    width: 100%;
-    margin: 20px;
+    width: 53vh;
     display: flex;
     flex-direction: column;
 }
 
 .description_footer > p{
-    margin-left :22px;
+    margin-left :30px;
     margin-bottom: 15px;
 }
 
@@ -412,12 +409,13 @@ header {
     margin-right: 2px;
 }
 
+
 /* Mentions légales */
 
 .footer_mentions {
     display: flex;
     flex-direction: column;
-    margin-left: 22px;
+    margin-left: 30px;
 }
 
 .footer_mentions li {
@@ -438,19 +436,19 @@ header {
 
 /* Top right */
 
+.right_footer{
+    width: 42vh;
+}
 
-.right_footer {
-    flex: 1;
+.right_footer form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 70%;
     margin: 20px auto;
 
 }
 
-.right_footer input, textarea {
+.right_footer form input, textarea {
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -461,17 +459,17 @@ header {
     outline: none;
 }
 
-.right_footer textarea {
+.right_footer form textarea {
     height: 5rem;
     min-height: 3rem;
 }
 
-.right_footer h1 {
+.right_footer form h1 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
 
-.right_footer button {
+.right_footer form button {
     background-color: green;
     color: white;
     font-weight: bold;
@@ -501,13 +499,33 @@ header {
 /* Map */
 
 #map {
-    height: 75%; 
-    width: 70%;  
+    height: 20vh; 
+    width: 40vh;  
     border-radius: 5px;
 }
 
 /* Icones */
 
 .icon {
-    color: green
+    color: green;
+    margin-right: 0.5rem;
+}
+
+/* Fleche */
+
+ .back-to-top {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+    font-size: 24px;
+    display: none; 
+}
+.back-to-top:hover {
+    background-color: rgba(0, 128, 0, 0.627);
 }

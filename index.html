@@ -9,16 +9,17 @@
     <link rel="icon" href="./assets/images/icon.webp">
     <title>Accueil</title>
 </head>
-<body>
+<body>        
+    <div id="top"></div>
     <header>
         <section id="navbar">
             <div class="brand_name">
-                <a href="accueil.html">
+                <a href="index.html">
                     <img src="./assets/images/logo.webp" alt="logo de l'entreprise">
                 </a>
             </div>
             <div id="navigation_links">
-                <a class="nav_link" href="accueil.html">Accueil</a>
+                <a class="nav_link" href="index.html">Accueil</a>
                 <a class="nav_link" href="info.html">À propos</a>
                 <a class="nav_link" href="prestations.html">Nos préstations</a>
                 <a class="nav_link" href="contact.html">Contact</a>
@@ -135,53 +136,52 @@
 
     <footer>
         <div class='top_footer'>
-            <div class='left_footer'>
-                <div class='description_footer'>
-                    <div class='footer_title'>
-                        <div>
-                            <img src="./assets/images/logoo.webp"alt="logo CATEX" />
-                        </div>
-                        <h4>Catex</h4>
+            <div class='description_footer'>
+                <div class='footer_title'>
+                    <div>
+                        <img src="./assets/images/logoo.webp"alt="logo CATEX" />
                     </div>
-                    <div class='footer_number'>
-                        <div>
-                            <span class="material-symbols-outlined icon">
-                                call
-                                </span>
-                        </div>
-                        <p>06.21.13.64.57</p>
+                    <h4>Catex</h4>
+                </div>
+                <div class='footer_number'>
+                    <div>
+                        <span class="material-symbols-outlined icon">call</span>
                     </div>
-                    <p>CATEX Environnement est une entreprise générale du bâtiment.</p>
-                    <div class='footer_adress'>
-                        <div>
-                            <span class="material-symbols-outlined icon">
-                                explore_nearby
-                                </span>
-                        </div>
-                        <p>68 rue du vieil dieu, Comines (59560)</p>
+                    <p>06.21.13.64.57</p>
+                </div>
+                <p>CATEX Environnement est une entreprise générale du bâtiment.</p>
+                <div class='footer_adress'>
+                    <div>
+                        <span class="material-symbols-outlined icon">explore_nearby</span>
                     </div>
-                    <ul class="footer_mentions">
-                        <li><a href="mentions.html">Mentions Légales</a></li>
-                        <li><a href="mentions.html">Politique de confidentialité</a></li>
-                    </ul>
-                </div>  
-                <div id="map" class="map_footer"></div>
-            </div>
-            <form class="right_footer">
-                <h1>Nous contacter</h1>
-                <form>
-                    <input type="text" id="name" name="name" required placeholder="Votre nom" autocomplete="off"/>
-                    <input type="email" id="email" name="email" required placeholder="Votre email" autocomplete="off"/>
-                    <textarea id="message" name="message" required placeholder="Message"></textarea>
-                    <button type="submit">Envoyer</button>
+                    <p>68 rue du vieil dieu, Comines (59560)</p>
+                </div>
+                <ul class="footer_mentions">
+                    <li><a href="mentions.html">Mentions Légales</a></li>
+                    <li><a href="mentions.html">Politique de confidentialité</a></li>
+                </ul>
+            </div>  
+            <div id="map" class="map_footer"></div>
+            <div class="right_footer">
+                <form class="footer_form" id="contact-form">
+                    <h1>Nous contacter</h1>
+                    <form>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom" autocomplete="off"/>
+                        <input type="email" id="email" name="email" required placeholder="Votre email" autocomplete="off"/>
+                        <textarea id="message" name="message" required placeholder="Message"></textarea>
+                        <button type="submit">Envoyer</button>
                 </form>
+            </div>
         </div>
         <div class='bot_footer'>
             <div><p>© 2024 CATEX, Tous droits reservés.</p></div>
         </div>
     </footer>
 
+    <a href="#top" class="back-to-top">&#x2191;</a>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="./index.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="form-handler.js"></script>
 </body>
 </html>

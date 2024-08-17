@@ -31,3 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
         .bindPopup('Cadex, France <br> 68 rue du vieil dieu, Comines')
         .openPopup();
 });
+
+const backToTopButton = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Afficher après 300px de défilement
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });

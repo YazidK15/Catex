@@ -130,13 +130,13 @@ main {
 .form-group input{
     border: none;
     padding: 8px;
-    border-bottom: 1px solid rgb(198, 198, 198);
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .form-group textarea{
     border: none;
     padding: 10px;
-    border-bottom: 1px solid rgb(198, 198, 198);
+    border-bottom: 1px solid rgb(0, 0, 0);
     height: 80px;
     resize: none;
 
