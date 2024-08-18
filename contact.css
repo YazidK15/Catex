@@ -367,6 +367,7 @@ main {
 
     #map {
         height: 250px;
+        max-width: 100%;
     }
 }
 
@@ -420,7 +421,6 @@ main {
 
     #map {
         height: 150px;
-        max-width: 100%;
     }
 
     .footer_mentions {

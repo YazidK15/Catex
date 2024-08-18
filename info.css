@@ -332,13 +332,13 @@ main {
         height: 30vh; /* Maintient le ratio d'aspect de l'image */
     }
 
-    .contact_info h1 {
-        font-size: 1.6rem;
+    .contact_info h1{
+        font-size: 1.4rem;
     }
-
     .contact_info button {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        width: 40%;
     }
 
     .jumbotron_info {

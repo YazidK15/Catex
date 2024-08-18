@@ -221,13 +221,16 @@ main {
 }
 
 
-
-
-
-
-
-
-
+@media (max-width: 1024px) {
+    .contact_info h1{
+        font-size: 1.4rem;
+    }
+    .contact_info button {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        width: 40%;
+    }
+}
 
 
 

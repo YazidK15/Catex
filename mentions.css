@@ -127,7 +127,7 @@ header {
         align-items: flex-start;
         background-color: white;
         position: absolute; /* Utilisez fixed pour coller au haut du viewport */
-        top: 6rem; /* Collé au haut */
+        top: 5rem; /* Collé au haut */
         left: 0; /* Collé à gauche */
         width: 100%; /* Prend toute la largeur */
         padding: 1rem;
