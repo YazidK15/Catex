@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 img {
@@ -127,7 +130,7 @@ header {
         max-height: 0;
         overflow: hidden;
         transform: translateY(-10px); /* Position initiale légèrement au-dessus */
-        transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.7s ease; /* Animation fluide */
+        transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; /* Animation fluide */
         z-index: 1000; /* Assurez-vous que le menu est au-dessus du contenu */
     }
 
@@ -314,6 +317,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.8rem;
     padding : 10px 4.4rem;
 }
 
@@ -343,6 +347,10 @@ main {
     .footer_mentions {
         align-items: center;
         margin-left: 0;
+    }
+
+    .bot_footer {
+        padding: 5px 20px;
     }
 }
 
@@ -380,5 +388,3 @@ main {
         display: none !important; 
     }
 }
-
-

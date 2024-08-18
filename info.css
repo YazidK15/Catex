@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 img {
@@ -18,6 +21,8 @@ header {
     align-items: center;
     box-shadow: 0 5px 10px rgba(165, 165, 165, 0.5); 
     height: 6rem;
+    position: relative; /* Nécessaire pour que le z-index fonctionne correctement */
+    z-index: 1; /* Assurez-vous que l'en-tête reste au-dessus du contenu */
 }
 
 #navbar {
@@ -26,12 +31,15 @@ header {
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
+    position: relative;
+    z-index: 1; /* Assurez-vous que la barre de navigation reste au-dessus du menu */
+
 }
 
 #navigation_links {
     display: flex;
     flex-direction: row;
-    list-style : none;
+    list-style: none;
     margin-left: auto;
 }
 
@@ -49,6 +57,12 @@ header {
     pointer-events: none;
 }
 
+.brand_name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .brand_name img {
     max-height: 100%; 
     height: 60px; 
@@ -64,6 +78,89 @@ header {
 .divider {
     margin-right: 10px;
     border-right: 1px solid rgb(0, 0, 0);
+}
+
+/* Styles pour le menu burger */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .burger-menu{
+        display: flex;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; /* Utiliser toute la largeur de l'en-tête */
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    #navigation_links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        position: absolute; /* Utilisez fixed pour coller au haut du viewport */
+        top: 6rem; /* Collé au haut */
+        left: 0; /* Collé à gauche */
+        width: 100%; /* Prend toute la largeur */
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transform: translateY(-10px); /* Position initiale légèrement au-dessus */
+        transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; /* Animation fluide */
+        z-index: 1000; /* Assurez-vous que le menu est au-dessus du contenu */
+    }
+
+    #navigation_links a {
+        margin-bottom: 1rem;
+    }
+
+    #navbar.active #navigation_links {
+        opacity: 1;
+        max-height: 50vh; 
+    }
+
+    /* Changement de couleur du burger menu quand le menu est ouvert */
+    .burger-menu.active div {
+        background-color: green;
+    }
+
+    /* Centrage du logo */
+    .brand_name {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1025px) {
+    .brand_name {
+        position: static;
+        transform: none;
+    }
 }
 
 
@@ -89,7 +186,7 @@ main {
 }
 
 .jumbotron_info {
-    background-image: url(./assets/images/main.webp);
+    background-image: url(./assets/images/mainn.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -121,11 +218,12 @@ main {
 
 .process-text {
     width: 70%;
+    text-align: center;
 }
 
 .process-container img {
     width: 100%; 
-    height: 350px; 
+    height: 42vh; 
     display: block; 
     object-fit: cover;
 }
@@ -157,6 +255,94 @@ main {
     color: white;
 }
 
+/* Responsive adjustments for very small screens (480px and below) */
+@media (max-width: 480px) {
+    .section_info h1 {
+        font-size: 1.2rem; /* Réduit la taille du titre pour les très petits écrans */
+        line-height: 1.2; /* Réduit l'espacement entre les lignes */
+    }
+
+    .section_info p {
+        font-size: 0.7rem; /* Réduit la taille du texte pour les petits écrans */
+    }
+
+    .process-container {
+        flex: 1 1 100%; /* Un élément par ligne */
+        border-bottom: 1px solid rgb(213, 213, 213); /* Ajoute une bordure pour les séparations */
+    }
+
+    .process-container img {
+        height: auto; /* Permet aux images de maintenir leur ratio d'aspect */
+        max-height: 200px; /* Limite la hauteur maximale des images */
+    }
+
+    .process-text {
+        width: 100%; /* Prend toute la largeur disponible */
+        font-size: 0.7rem; /* Réduit la taille de la police du texte */
+        text-align: center; /* Centre le texte pour une meilleure lisibilité */
+        margin-top: 0.5rem; /* Réduit l'espace au-dessus du texte */
+    }
+
+    .contact_info {
+        padding: 1rem; /* Réduit le padding intérieur pour les très petits écrans */
+    }
+
+    .contact_info h1 {
+        font-size: 1.4rem; /* Réduit la taille du titre pour les très petits écrans */
+    }
+
+    .contact_info button {
+        padding: 0.4rem 0.8rem; /* Ajuste le padding du bouton pour les très petits écrans */
+        font-size: 0.7rem; /* Réduit la taille de la police du bouton */
+    }
+}
+
+
+/* Responsive adjustments for smartphones (768px and below) */
+@media (max-width: 768px) {
+    .section_info h1{
+        font-size: 1.4rem;
+    }
+    .section_info p{
+        font-size: 0.8rem;
+    }
+
+
+    .section_container {
+        flex-wrap: wrap
+    }
+
+    .process-container {
+        flex: 1 1 calc(50%); /* Deux éléments par ligne avec un espace entre eux */
+        border-bottom: none;
+    }
+
+    .process-container:nth-of-type(4) { /* Le deuxième texte sera maintenant en deuxième */
+        order: 2;
+    }
+
+    .process-text {
+        width: 70%; /* Ajuste la largeur du texte pour les petits écrans */
+        font-size: 0.8rem;
+        text-align: center; /* Centre le texte pour une meilleure lisibilité */
+        margin-top: 1rem; /* Ajoute un espace au-dessus du texte */
+    }
+
+    .process-container img {
+        height: 30vh; /* Maintient le ratio d'aspect de l'image */
+    }
+
+    .contact_info h1 {
+        font-size: 1.6rem;
+    }
+
+    .contact_info button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+
 
 
 
@@ -167,10 +353,10 @@ main {
     background-color: #181818;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 4rem;
 }
 
 
@@ -243,17 +429,44 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding : 10px 40px
+    font-size: 0.8rem;
+    padding : 10px 4.4rem;
 }
-
-
-/* Map */
 
 #map {
     height: 28vh; 
     width: 60vh;  
     border-radius: 5px;
 }
+
+@media (max-width: 1024px) {
+    .top_footer, .bot_footer {
+        flex-direction: column; 
+        padding: 1rem;
+    }
+
+    .description_footer {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+
+    #map {
+        width: 100%; 
+    }
+
+    .footer_mentions {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .bot_footer {
+        padding: 5px 20px;
+    }
+}
+
+
 
 /* Icones */
 
@@ -276,29 +489,14 @@ main {
     cursor: pointer;
     font-size: 24px;
     border-radius: 50%;
-
     display: none; 
 }
 .back-to-top:hover {
     background-color: rgba(0, 128, 0, 0.627);
 }
 
-/* Fleche */
-
-.back-to-top {
-    position: fixed;
-    bottom: 5rem;
-    right: 2rem;
-    background-color: green;
-    color: white;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none; 
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 24px;
-    display: none; 
-}
-.back-to-top:hover {
-    background-color: rgba(0, 128, 0, 0.627);
+@media (max-width: 1024px) {
+    .back-to-top {
+        display: none !important; 
+    }
 }
