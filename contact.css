@@ -308,70 +308,9 @@ main {
     color: green
 }
 
-/* Responsive adjustments for tablets (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    main {
-        flex-direction: column;
-        width: 80%;
-        padding: 3rem 0;
-    }
-
-    .contact_text {
-        flex: 1;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-
-    .contact_text h1 {
-        font-size: 1.8rem;
-        width: 100%;
-    }
-
-    .contact_zone {
-        margin: 1.5rem 0;
-    }
-
-    .contact_email, .contact_adress, .contact_phone {
-        margin: 1.5rem 0;
-    }
-
-    .form-container {
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 80%;
-    }
-
-    .form-row {
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .form-group {
-        margin: 1rem 0;
-    }
-
-    .form-group input, .form-group textarea {
-        width: 80%;
-    }
-
-    .form-container button {
-        width: 80%;
-        margin-top: 1rem;
-    }
-
-    .footer_mentions a, .footer_mentions p{
-        font-size: 0.8rem;
-    }
-
-
-
-    #map {
-        display: none;
-    }
-}
 
 /* Responsive adjustments for smartphones (768px and below) */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     main {
         flex-direction: column;
         width: 100%;
@@ -379,6 +318,10 @@ main {
     }
 
     .contact_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         margin-bottom: 1.5rem;
         width: 90%;
@@ -403,7 +346,7 @@ main {
 
     .form-row {
         flex-direction: column;
-        width: 80%;
+        width: 100%;
     }
 
     .form-group {
@@ -411,7 +354,7 @@ main {
     }
 
     .form-group input, .form-group textarea {
-        width: 80%;
+        width: 100%;
     }
 
     .form-container button {
