@@ -312,6 +312,12 @@ main {
 /* Responsive adjustments for smartphones (768px and below) */
 @media (max-width: 1024px) {
 
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
     .contact_text {
         display: flex;
         flex-direction: column;
