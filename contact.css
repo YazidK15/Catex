@@ -338,12 +338,12 @@ main {
     .form-container {
         flex-direction: column;
         justify-content: flex-start;
-        width: 100%;
+        width: 80%;
     }
 
     .form-row {
         flex-direction: column;
-        width: 100%;
+        width: 80%;
     }
 
     .form-group {
@@ -351,11 +351,11 @@ main {
     }
 
     .form-group input, .form-group textarea {
-        width: 100%;
+        width: 80%;
     }
 
     .form-container button {
-        width: 100%;
+        width: 80%;
         margin-top: 1rem;
     }
 
@@ -366,8 +366,7 @@ main {
 
 
     #map {
-        height: 250px;
-        max-width: 100%;
+        display: none;
     }
 }
 
@@ -399,12 +398,12 @@ main {
 
     .form-container {
         flex-direction: column;
-        width: 100%;
+        width: 80%;
     }
 
     .form-row {
         flex-direction: column;
-        width: 100%;
+        width: 80%;
     }
 
     .form-group {
@@ -412,11 +411,11 @@ main {
     }
 
     .form-group input, .form-group textarea {
-        width: 100%;
+        width: 80%;
     }
 
     .form-container button {
-        width: 100%;
+        width: 80%;
         margin-top: 1rem;
     }
 
