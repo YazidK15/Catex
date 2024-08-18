@@ -375,13 +375,14 @@ main {
 @media (max-width: 768px) {
     main {
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         padding: 2rem 0;
     }
 
     .contact_text {
         text-align: center;
         margin-bottom: 1.5rem;
+        width: 90%;
     }
 
     .contact_text h1 {
@@ -420,8 +421,7 @@ main {
     }
 
     #map {
-        height: 150px;
-        width: 90%;
+        display: none;
     }
 
     .footer_mentions {
