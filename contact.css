@@ -421,6 +421,7 @@ main {
 
     #map {
         height: 150px;
+        width: 90%;
     }
 
     .footer_mentions {

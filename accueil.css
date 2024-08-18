@@ -254,7 +254,7 @@ header {
     }
 
     .jumbotron p {
-        font-size: 2rem;
+        font-size: 1.3rem;
         display: flex;
         text-align: center;
     }
@@ -289,7 +289,7 @@ header {
     }
 
     .jumbotron p {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .jumbotron button {
