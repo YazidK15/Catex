@@ -263,7 +263,7 @@ header {
     .jumbotron button {
         font-size: 14px;
         padding: 0.5rem 0.3rem;
-        width: 50vh;
+        width: 30vh;
     }
 
 }
@@ -361,6 +361,7 @@ header {
 
     .about_text {
         padding: 1rem;
+        align-items: center;
     }
 
     .about_text h1 {
@@ -376,6 +377,7 @@ header {
         padding: 0.8rem 1.5rem;
         width: auto;
         font-size: 1rem;
+        width: 30vh;
     }
 }
 
