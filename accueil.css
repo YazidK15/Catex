@@ -254,6 +254,7 @@ header {
     }
 
     .jumbotron p {
+        margin-top: 2rem;
         font-size: 1.3rem;
         display: flex;
         text-align: center;
@@ -263,6 +264,7 @@ header {
         font-size: 14px;
         padding: 0.5rem 0.3rem;
         width: 30vh;
+        margin-top: 1rem;
     }
 
     .jumbotron {
