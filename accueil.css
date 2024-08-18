@@ -265,6 +265,16 @@ header {
         width: 30vh;
     }
 
+    .jumbotron {
+        background-image: url(./assets/images/jumbotron.webp);
+        background-size: cover; /* Couvre toute la zone de l'élément */
+        background-position: center center; /* Centre l'image horizontalement et verticalement */
+        background-attachment: scroll; /* Changez à fixed si vous souhaitez un effet de parallaxe */
+        height: 90vh; /* Assurez-vous que l'élément a une hauteur */
+        width: 100%; /* Assurez-vous que l'élément a une largeur */
+        background-repeat: no-repeat; /* Évite que l'image se répète */
+    }
+
 }
 
 /* Responsive pour les petits smartphones (480px et moins) */
@@ -850,10 +860,14 @@ header {
         padding: 1rem;
     }
 
-    .description_footer {
+    .description_footer{
         align-items: center;
         text-align: center;
         margin-bottom: 1.5rem;
+        font-size: 0.8rem;
+    }
+    .description_footer > p{
+        margin-left : 0px;
     }
 
 

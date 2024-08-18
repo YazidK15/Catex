@@ -420,6 +420,7 @@ main {
 
     #map {
         height: 150px;
+        max-width: 100%;
     }
 
     .footer_mentions {
