@@ -21,8 +21,8 @@ header {
     align-items: center;
     box-shadow: 0 5px 10px rgba(165, 165, 165, 0.5); 
     height: 6rem;
-    position: relative; /* Nécessaire pour que le z-index fonctionne correctement */
-    z-index: 1; /* Assurez-vous que l'en-tête reste au-dessus du contenu */
+    position: relative; 
+    z-index: 1;
 }
 
 #navbar {
@@ -32,7 +32,7 @@ header {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    z-index: 1; /* Assurez-vous que la barre de navigation reste au-dessus du menu */
+    z-index: 1; 
 
 }
 
@@ -109,7 +109,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%; /* Utiliser toute la largeur de l'en-tête */
+        width: 100%; 
         margin: 0;
         position: relative;
         z-index: 1;
@@ -120,18 +120,18 @@ header {
         flex-direction: column;
         align-items: flex-start;
         background-color: white;
-        position: absolute; /* Utilisez fixed pour coller au haut du viewport */
-        top: 6rem; /* Collé au haut */
-        left: 0; /* Collé à gauche */
-        width: 100%; /* Prend toute la largeur */
+        position: absolute; 
+        top: 6rem; 
+        left: 0; 
+        width: 100%; 
         padding: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         opacity: 0;
         max-height: 0;
         overflow: hidden;
-        transform: translateY(-10px); /* Position initiale légèrement au-dessus */
-        transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; /* Animation fluide */
-        z-index: 1000; /* Assurez-vous que le menu est au-dessus du contenu */
+        transform: translateY(-10px); 
+        transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; 
+        z-index: 1000;
     }
 
     #navigation_links a {
@@ -143,12 +143,10 @@ header {
         max-height: 50vh; 
     }
 
-    /* Changement de couleur du burger menu quand le menu est ouvert */
     .burger-menu.active div {
         background-color: green;
     }
 
-    /* Centrage du logo */
     .brand_name {
         position: absolute;
         left: 50%;
@@ -165,14 +163,7 @@ header {
 
 
 
-
-
-
-
-
 /* Main */
-
-
 main {
     display: flex;
     flex-direction: column;
@@ -189,9 +180,6 @@ main {
 .section_info h1 {
     margin-bottom: 3rem;
 }
-
-
-
 
 .contact_info {
     background-color: rgb(213, 213, 213);
@@ -233,12 +221,7 @@ main {
 }
 
 
-
-
-
-
 /* Footer */
-
 /* Top left */
 .top_footer {
     background-color: #181818;
@@ -249,7 +232,6 @@ main {
     align-items: center;
     padding: 1.5rem 4rem;
 }
-
 
 .description_footer {
     display: flex;
@@ -287,7 +269,6 @@ main {
 
 
 /* Mentions légales */
-
 .footer_mentions {
     display: flex;
     flex-direction: column;
@@ -312,7 +293,6 @@ main {
 
 
 /* Bot */
-
 .bot_footer {
     background-color: black;
     color: white;
@@ -364,14 +344,12 @@ main {
 
 
 /* Icones */
-
 .icon {
     color: green;
     margin-right: 0.5rem;
 }
 
 /* Fleche */
-
 .back-to-top {
     position: fixed;
     bottom: 5rem;

@@ -21,8 +21,8 @@ header {
     align-items: center;
     box-shadow: 0 5px 10px rgba(165, 165, 165, 0.5); 
     height: 6rem;
-    position: relative; /* Nécessaire pour que le z-index fonctionne correctement */
-    z-index: 1; /* Assurez-vous que l'en-tête reste au-dessus du contenu */
+    position: relative; 
+    z-index: 1;
 }
 
 #navbar {
@@ -32,7 +32,7 @@ header {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    z-index: 1; /* Assurez-vous que la barre de navigation reste au-dessus du menu */
+    z-index: 1; 
 
 }
 
@@ -109,7 +109,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%; /* Utiliser toute la largeur de l'en-tête */
+        width: 100%; 
         margin: 0;
         position: relative;
         z-index: 1;
@@ -120,18 +120,18 @@ header {
         flex-direction: column;
         align-items: flex-start;
         background-color: white;
-        position: absolute; /* Utilisez fixed pour coller au haut du viewport */
-        top: 6rem; /* Collé au haut */
-        left: 0; /* Collé à gauche */
-        width: 100%; /* Prend toute la largeur */
+        position: absolute; 
+        top: 6rem; 
+        left: 0; 
+        width: 100%;
         padding: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         opacity: 0;
         max-height: 0;
         overflow: hidden;
-        transform: translateY(-10px); /* Position initiale légèrement au-dessus */
-        transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; /* Animation fluide */
-        z-index: 1000; /* Assurez-vous que le menu est au-dessus du contenu */
+        transform: translateY(-10px); 
+        transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; 
+        z-index: 1000; 
     }
 
     #navigation_links a {
@@ -143,12 +143,10 @@ header {
         max-height: 50vh; 
     }
 
-    /* Changement de couleur du burger menu quand le menu est ouvert */
     .burger-menu.active div {
         background-color: green;
     }
 
-    /* Centrage du logo */
     .brand_name {
         position: absolute;
         left: 50%;
@@ -165,9 +163,7 @@ header {
 
 
 
-
 /* Main */
-
 main {
     display: flex;
     flex-direction: column;
@@ -195,7 +191,6 @@ main {
 
 
 /* Conteneur principal */
-
 .section_container {
     display: flex;
     flex-wrap: wrap;
@@ -258,42 +253,42 @@ main {
 /* Responsive adjustments for very small screens (480px and below) */
 @media (max-width: 480px) {
     .section_info h1 {
-        font-size: 1.2rem; /* Réduit la taille du titre pour les très petits écrans */
-        line-height: 1.2; /* Réduit l'espacement entre les lignes */
+        font-size: 1.2rem; 
+        line-height: 1.2; 
     }
 
     .section_info p {
-        font-size: 0.7rem; /* Réduit la taille du texte pour les petits écrans */
+        font-size: 0.7rem; 
     }
 
     .process-container {
-        flex: 1 1 100%; /* Un élément par ligne */
-        border-bottom: 1px solid rgb(213, 213, 213); /* Ajoute une bordure pour les séparations */
+        flex: 1 1 100%; 
+        border-bottom: 1px solid rgb(213, 213, 213); 
     }
 
     .process-container img {
-        height: auto; /* Permet aux images de maintenir leur ratio d'aspect */
-        max-height: 200px; /* Limite la hauteur maximale des images */
+        height: auto; 
+        max-height: 200px; 
     }
 
     .process-text {
-        width: 100%; /* Prend toute la largeur disponible */
-        font-size: 0.7rem; /* Réduit la taille de la police du texte */
-        text-align: center; /* Centre le texte pour une meilleure lisibilité */
-        margin-top: 0.5rem; /* Réduit l'espace au-dessus du texte */
+        width: 100%; 
+        font-size: 0.7rem; 
+        text-align: center; 
+        margin-top: 0.5rem; 
     }
 
     .contact_info {
-        padding: 1rem; /* Réduit le padding intérieur pour les très petits écrans */
+        padding: 1rem; 
     }
 
     .contact_info h1 {
-        font-size: 1.4rem; /* Réduit la taille du titre pour les très petits écrans */
+        font-size: 1.4rem; 
     }
 
     .contact_info button {
-        padding: 0.4rem 0.8rem; /* Ajuste le padding du bouton pour les très petits écrans */
-        font-size: 0.7rem; /* Réduit la taille de la police du bouton */
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.7rem; 
     }
 }
 
@@ -313,23 +308,23 @@ main {
     }
 
     .process-container {
-        flex: 1 1 calc(50%); /* Deux éléments par ligne avec un espace entre eux */
+        flex: 1 1 calc(50%); 
         border-bottom: none;
     }
 
-    .process-container:nth-of-type(4) { /* Le deuxième texte sera maintenant en deuxième */
+    .process-container:nth-of-type(4) { 
         order: 2;
     }
 
     .process-text {
-        width: 70%; /* Ajuste la largeur du texte pour les petits écrans */
+        width: 70%; 
         font-size: 0.8rem;
-        text-align: center; /* Centre le texte pour une meilleure lisibilité */
-        margin-top: 1rem; /* Ajoute un espace au-dessus du texte */
+        text-align: center; 
+        margin-top: 1rem; 
     }
 
     .process-container img {
-        height: 30vh; /* Maintient le ratio d'aspect de l'image */
+        height: 30vh; 
     }
 
     .contact_info h1{
@@ -343,21 +338,18 @@ main {
 
     .jumbotron_info {
         background-image: url(./assets/images/mainn.webp);
-        background-size: cover; /* Couvre toute la zone de l'élément */
-        background-position: center center; /* Centre l'image horizontalement et verticalement */
-        background-attachment: scroll; /* Changez à fixed si vous souhaitez un effet de parallaxe */
-        height: 70vh; /* Assurez-vous que l'élément a une hauteur */
-        width: 100%; /* Assurez-vous que l'élément a une largeur */
-        background-repeat: no-repeat; /* Évite que l'image se répète */
+        background-size: cover; 
+        background-position: center center; 
+        background-attachment: scroll; 
+        height: 70vh; 
+        width: 100%;
+        background-repeat: no-repeat; 
     }
 }
 
 
 
-
-
 /* Footer */
-
 /* Top left */
 .top_footer {
     background-color: #181818;
@@ -406,7 +398,6 @@ main {
 
 
 /* Mentions légales */
-
 .footer_mentions {
     display: flex;
     flex-direction: column;
@@ -431,7 +422,6 @@ main {
 
 
 /* Bot */
-
 .bot_footer {
     background-color: black;
     color: white;

@@ -27,8 +27,8 @@ header {
     align-items: center;
     box-shadow: 0 5px 10px rgba(165, 165, 165, 0.5); 
     height: 6rem;
-    position: relative; /* Nécessaire pour que le z-index fonctionne correctement */
-    z-index: 1; /* Assurez-vous que l'en-tête reste au-dessus du contenu */
+    position: relative; 
+    z-index: 1;
 }
 
 #navbar {
@@ -38,7 +38,7 @@ header {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    z-index: 1; /* Assurez-vous que la barre de navigation reste au-dessus du menu */
+    z-index: 1; 
 
 }
 
@@ -115,7 +115,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%; /* Utiliser toute la largeur de l'en-tête */
+        width: 100%;
         margin: 0;
         position: relative;
         z-index: 1;
@@ -126,10 +126,10 @@ header {
         flex-direction: column;
         align-items: flex-start;
         background-color: white;
-        position: absolute; /* Utilisez fixed pour coller au haut du viewport */
-        top: 6rem; /* Collé au haut */
-        left: 0; /* Collé à gauche */
-        width: 100%; /* Prend toute la largeur */
+        position: absolute; 
+        top: 6rem; 
+        left: 0; 
+        width: 100%; 
         padding: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         opacity: 0;
@@ -258,7 +258,6 @@ main {
 /* Footer */
 
 /* Mentions légales */
-
 .footer_mentions {
     display: flex;
     justify-content: space-between;
@@ -292,9 +291,6 @@ main {
     padding : 10px 40px;
 }
 
-
-/* Map */
-
 #map {
     margin-top: 5rem;
     height: 300px; 
@@ -302,7 +298,6 @@ main {
     border-radius: 5px;
 }
 
-/* Icones */
 
 .icon {
     color: green
@@ -397,9 +392,9 @@ main {
 }
 
 .notification.success {
-    background-color: #28a745; /* Vert pour succès */
+    background-color: #28a745; 
 }
 
 .notification.error {
-    background-color: #dc3545; /* Rouge pour erreur */
+    background-color: #dc3545; 
 }

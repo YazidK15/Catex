@@ -21,8 +21,8 @@ header {
     align-items: center;
     box-shadow: 0 5px 10px rgba(165, 165, 165, 0.5); 
     height: 6rem;
-    position: relative; /* Nécessaire pour que le z-index fonctionne correctement */
-    z-index: 1; /* Assurez-vous que l'en-tête reste au-dessus du contenu */
+    position: relative; 
+    z-index: 1; 
 }
 
 #navbar {
@@ -32,7 +32,7 @@ header {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    z-index: 1; /* Assurez-vous que la barre de navigation reste au-dessus du menu */
+    z-index: 1; 
 
 }
 
@@ -109,7 +109,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%; /* Utiliser toute la largeur de l'en-tête */
+        width: 100%; 
         margin: 0;
         position: relative;
     }
@@ -119,18 +119,18 @@ header {
         flex-direction: column;
         align-items: flex-start;
         background-color: white;
-        position: absolute; /* Utilisez fixed pour coller au haut du viewport */
-        top: 5rem; /* Collé au haut */
-        left: 0; /* Collé à gauche */
-        width: 100%; /* Prend toute la largeur */
+        position: absolute; 
+        top: 5rem; 
+        left: 0; 
+        width: 100%; 
         padding: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         opacity: 0;
         max-height: 0;
         overflow: hidden;
-        transform: translateY(-10px); /* Position initiale légèrement au-dessus */
-        transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; /* Animation fluide */
-        z-index: 3000; /* Assurez-vous que le menu est au-dessus du contenu */
+        transform: translateY(-10px); 
+        transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; 
+        z-index: 3000; 
     }
 
     #navigation_links a {
@@ -269,12 +269,12 @@ header {
 
     .jumbotron {
         background-image: url(./assets/images/jumbotron.webp);
-        background-size: cover; /* Couvre toute la zone de l'élément */
-        background-position: center center; /* Centre l'image horizontalement et verticalement */
-        background-attachment: scroll; /* Changez à fixed si vous souhaitez un effet de parallaxe */
-        height: 90vh; /* Assurez-vous que l'élément a une hauteur */
-        width: 100%; /* Assurez-vous que l'élément a une largeur */
-        background-repeat: no-repeat; /* Évite que l'image se répète */
+        background-size: cover; 
+        background-position: center center; 
+        background-attachment: scroll; 
+        height: 90vh;
+        width: 100%;
+        background-repeat: no-repeat; 
     }
 
 }
@@ -366,8 +366,8 @@ header {
     .about_image {
         flex: none;
         width: 100%;
-        height: 50vh; /* Adjust the height for smaller screens */
-        background-attachment: scroll; /* Change to scroll for smoother transitions on smaller devices */
+        height: 50vh; 
+        background-attachment: scroll; 
     }
 
     .about_text {
@@ -470,9 +470,10 @@ header {
 .choice_box {
     flex: 1;
     margin: 1rem;
-    min-width: 250px; /* Permet de s'assurer que chaque boîte garde une taille correcte */
+    min-width: 250px; 
     max-width: 300px;
-    padding: 1rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     background-color: #f9f9f9;
@@ -527,8 +528,6 @@ header {
         font-size: 0.9rem;
     }
 }
-
-
 
 
 
@@ -646,13 +645,7 @@ header {
 }
 
 
-
-
-
-
-
 /* Section avis */
-
 .section_view {
     display: flex;
     flex-direction: column;
