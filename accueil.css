@@ -368,14 +368,11 @@ header {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    padding : 0 1rem;
-    margin-top: 2rem;
-    gap: 30px;
+    padding: 1.5rem 0;
 }
 
 
 .description_footer {
-    width: 53vh;
     display: flex;
     flex-direction: column;
 }
@@ -434,54 +431,6 @@ header {
     transition: color 0.4s ease;
 }
 
-/* Top right */
-
-.right_footer{
-    width: 42vh;
-}
-
-.right_footer form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-
-}
-
-.right_footer form input, textarea {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 5px;
-    resize: none;
-    outline: none;
-}
-
-.right_footer form textarea {
-    height: 5rem;
-    min-height: 3rem;
-}
-
-.right_footer form h1 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.right_footer form button {
-    background-color: green;
-    color: white;
-    font-weight: bold;
-    padding: 8px 40px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.right_footer button:hover {
-    background-color: rgba(0, 149, 0, 0.714);
-}
 
 /* Bot */
 
@@ -499,8 +448,8 @@ header {
 /* Map */
 
 #map {
-    height: 20vh; 
-    width: 40vh;  
+    height: 28vh; 
+    width: 60vh;  
     border-radius: 5px;
 }
 
@@ -516,12 +465,13 @@ header {
  .back-to-top {
     position: fixed;
     bottom: 5rem;
-    right: 2rem;
+    right: 10px;
     background-color: green;
     color: white;
     padding: 5px;
     text-align: center;
     text-decoration: none; 
+    border-radius: 50%;
     cursor: pointer;
     font-size: 24px;
     display: none; 

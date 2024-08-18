@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }).addTo(map);
     
     L.marker(location).addTo(map)
-        .bindPopup('Cadex, France <br> 68 rue du vieil dieu, Comines')
+        .bindPopup('Catex, France <br> 68 rue du vieil dieu, Comines')
         .openPopup();
 });
 
@@ -41,3 +41,25 @@ const backToTopButton = document.querySelector('.back-to-top');
                 backToTopButton.style.display = 'none';
             }
         });
+
+        backToTopButton.addEventListener('click', (event) => {
+            event.preventDefault(); // Empêche le comportement par défaut du lien
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Utilise un défilement fluide
+            });
+        });
+
+
+
+document.querySelector('.burger-menu').addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    const burgerMenu = document.querySelector('.burger-menu');
+        
+    // Toggle la classe 'active' pour le menu et le burger
+    navbar.classList.toggle('active');
+    burgerMenu.classList.toggle('active');
+}
+        
