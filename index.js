@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const backToTopButton = document.querySelector('.back-to-top');
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Afficher après 300px de défilement
+            if (window.scrollY > 300) { 
                 backToTopButton.style.display = 'block';
             } else {
                 backToTopButton.style.display = 'none';
@@ -43,10 +43,10 @@ const backToTopButton = document.querySelector('.back-to-top');
         });
 
         backToTopButton.addEventListener('click', (event) => {
-            event.preventDefault(); // Empêche le comportement par défaut du lien
+            event.preventDefault(); 
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth' // Utilise un défilement fluide
+                behavior: 'smooth' 
             });
         });
 
@@ -58,7 +58,6 @@ function toggleMenu() {
     const navbar = document.getElementById('navbar');
     const burgerMenu = document.querySelector('.burger-menu');
         
-    // Toggle la classe 'active' pour le menu et le burger
     navbar.classList.toggle('active');
     burgerMenu.classList.toggle('active');
 }

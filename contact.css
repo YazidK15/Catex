@@ -262,6 +262,7 @@ main {
 .footer_mentions {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer_mentions li {
@@ -311,7 +312,7 @@ main {
 @media (min-width: 768px) and (max-width: 1024px) {
     main {
         flex-direction: column;
-        width: 90%;
+        width: 80%;
         padding: 3rem 0;
     }
 
@@ -362,6 +363,8 @@ main {
         font-size: 0.8rem;
     }
 
+
+
     #map {
         height: 250px;
     }
@@ -371,7 +374,7 @@ main {
 @media (max-width: 768px) {
     main {
         flex-direction: column;
-        width: 95%;
+        width: 80%;
         padding: 2rem 0;
     }
 
@@ -416,7 +419,7 @@ main {
     }
 
     #map {
-        height: 200px;
+        height: 150px;
     }
 
     .footer_mentions {
@@ -428,4 +431,31 @@ main {
     .footer_mentions li {
         margin: 0.2rem 0;
     }
+}
+
+
+/* Style général pour les notifications */
+#notifications {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.notification {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notification.success {
+    background-color: #28a745; /* Vert pour succès */
+}
+
+.notification.error {
+    background-color: #dc3545; /* Rouge pour erreur */
 }

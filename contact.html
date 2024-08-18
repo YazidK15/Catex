@@ -64,7 +64,7 @@
                     </div>
                     <div class="form-group">
                         <label for="phone">Téléphone</label>
-                        <input type="phone" id="phone" name="phone"  autocomplete="off"/>
+                        <input type="tel" id="phone" name="phone"  autocomplete="off"/>
                     </div>
                 </div>
                 <div class="form-group">
@@ -85,9 +85,11 @@
             </ul>
         </div>
     </footer>
+    <div id="notifications"></div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="form-handler.js"></script>
+
 
 
 
@@ -105,6 +107,17 @@
         .bindPopup('Catex, France <br> 68 rue du vieil dieu, Comines')
         .openPopup();
 });
+
+
+document.querySelector('.burger-menu').addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    const burgerMenu = document.querySelector('.burger-menu');
+        
+    navbar.classList.toggle('active');
+    burgerMenu.classList.toggle('active');
+}
     </script>
 </body>
 </html>

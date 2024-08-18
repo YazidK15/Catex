@@ -340,6 +340,16 @@ main {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
     }
+
+    .jumbotron_info {
+        background-image: url(./assets/images/mainn.webp);
+        background-size: cover; /* Couvre toute la zone de l'élément */
+        background-position: center center; /* Centre l'image horizontalement et verticalement */
+        background-attachment: scroll; /* Changez à fixed si vous souhaitez un effet de parallaxe */
+        height: 70vh; /* Assurez-vous que l'élément a une hauteur */
+        width: 100%; /* Assurez-vous que l'élément a une largeur */
+        background-repeat: no-repeat; /* Évite que l'image se répète */
+    }
 }
 
 

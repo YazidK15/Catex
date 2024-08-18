@@ -142,7 +142,6 @@ header {
         max-height: 50vh; 
     }
 
-    /* Changement de couleur du burger menu quand le menu est ouvert */
     .burger-menu.active div {
         background-color: green;
     }
@@ -361,7 +360,6 @@ header {
 
     .about_text {
         padding: 1rem;
-        align-items: center;
     }
 
     .about_text h1 {
@@ -377,7 +375,6 @@ header {
         padding: 0.8rem 1.5rem;
         width: auto;
         font-size: 1rem;
-        width: 30vh;
     }
 }
 
