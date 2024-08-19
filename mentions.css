@@ -143,6 +143,37 @@ header {
     }
 }
 
+/* Main */
+.mention_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+}
+.mention_container p {
+    margin-top: 20px;
+    max-width: 70%;
+}
+
+@media (max-width: 768px) {
+    .mention_container h1 {
+        font-size: 1.5rem;
+    }
+    .mention_container p {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 480px) {
+    .mention_container h1 {
+        font-size: 1rem;
+    }
+    .mention_container p {
+        font-size: 0.8rem;
+    }
+}
+
 /* Footer */
 /* Top left */
 .top_footer {

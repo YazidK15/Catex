@@ -222,7 +222,7 @@ header {
         font-size: 14px;
         padding: 0.5rem 0.3rem;
         width: 30vh;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .jumbotron {
         background-image: url(./assets/images/jumbotron.webp);
@@ -248,6 +248,7 @@ header {
     .jumbotron button {
         font-size: 12px;
         padding: 0.4rem 0.8rem;
+        margin-top: 1rem;
     }
 }
 
