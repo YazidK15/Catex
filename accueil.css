@@ -29,7 +29,6 @@ header {
     margin: 0 auto;
     position: relative;
     z-index: 1; 
-
 }
 #navigation_links {
     display: flex;
@@ -80,6 +79,9 @@ header {
     margin: 4px 0;
     transition: background-color 0.3s ease;
 }
+.home_link {
+    color: green !important;
+}
 
 @media (max-width: 1024px) {
     .burger-menu{
@@ -99,12 +101,14 @@ header {
     #navigation_links {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        font-weight: 500;
         background-color: white;
         position: absolute; 
-        top: 5rem; 
+        top: 4rem; 
         left: 0; 
         width: 100%; 
+        height: 100vh;
         padding: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         opacity: 0;
@@ -113,13 +117,15 @@ header {
         transform: translateY(-10px); 
         transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; 
         z-index: 3000; 
+        padding-top: 4rem;
     }
     #navigation_links a {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
     }
     #navbar.active #navigation_links {
         opacity: 1;
-        max-height: 50vh; 
+        max-height: 100vh; 
     }
     .burger-menu.active div {
         background-color: green;
@@ -130,7 +136,7 @@ header {
         transform: translateX(-50%);
     }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     .brand_name {
         position: static;
         transform: none;
@@ -341,6 +347,7 @@ header {
     }
     .about_text a {
         padding: 0.7rem 1.2rem;
+        background-color: green;
         font-size: 0.9rem;
     }
 }
@@ -516,6 +523,9 @@ header {
 @media (max-width: 768px) {
     .benefit-image {
         height: 40vh;
+    }
+    .view-all{
+        background-color: green;
     }
 }
 @media (max-width: 480px) {
