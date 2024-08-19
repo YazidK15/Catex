@@ -200,7 +200,7 @@ header {
 
 @media (max-width: 1024px) {
     .jumbotron {
-        height: 70vh;
+        height: 50vh;
     }
     .content {
         margin-left: 2rem;
@@ -217,9 +217,15 @@ header {
 }
 @media (max-width: 768px) {
     .jumbotron {
-        height: 40vh;
+        height: 50vh;
         display: flex;
         justify-content: center;
+        background-image: url(./assets/images/jumbotron.webp);
+        background-size: cover; 
+        background-position: center center; 
+        background-attachment: scroll; 
+        width: 100%;
+        background-repeat: no-repeat; 
     }
     .content {
         margin-left: 0rem;
@@ -233,6 +239,7 @@ header {
         font-weight: bold;
         font-size: 1.4rem;
         line-height: 3rem;
+        margin-bottom: 1rem;
         display: flex;
         text-align: center;
     }
@@ -241,15 +248,6 @@ header {
         padding: 0.6rem;
         width: 100%;
         margin-top: 0rem;
-    }
-    .jumbotron {
-        background-image: url(./assets/images/jumbotron.webp);
-        background-size: cover; 
-        background-position: center center; 
-        background-attachment: scroll; 
-        height: 90vh;
-        width: 100%;
-        background-repeat: no-repeat; 
     }
 }
 
@@ -313,6 +311,7 @@ header {
     }
     .about_text {
         padding: 1rem;
+        margin-bottom: 1rem;
     }
     .about_text h1 {
         font-size: 1.8rem;
