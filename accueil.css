@@ -135,11 +135,17 @@ header {
         left: 50%;
         transform: translateX(-50%);
     }
+    body.menu-active {
+        overflow: hidden; /* Désactiver le défilement */
+    }
 }
 @media (min-width: 1024px) {
     .brand_name {
         position: static;
         transform: none;
+    }
+    body.menu-active {
+        overflow: auto;
     }
 }
 
@@ -209,25 +215,27 @@ header {
 @media (max-width: 768px) {
     .jumbotron {
         height: 60vh;
+        display: flex;
+        justify-content: center;
     }
     .content {
-        margin-left: 1rem;
-        width: 95%;
+        margin-left: 0rem;
+        width: 50%;
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
     .jumbotron p {
-        margin-top: 2rem;
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+        line-height: 3rem;
         display: flex;
         text-align: center;
     }
     .jumbotron button {
         font-size: 14px;
-        padding: 0.5rem 0.3rem;
-        width: 30vh;
+        padding: 1rem 0.4rem;
+        width: 100%;
         margin-top: 2rem;
     }
     .jumbotron {
@@ -238,23 +246,6 @@ header {
         height: 90vh;
         width: 100%;
         background-repeat: no-repeat; 
-    }
-}
-@media (max-width: 480px) {
-    .jumbotron {
-        height: 50vh;
-    }
-    .content {
-        margin-left: 1rem;
-        width: 100%;
-    }
-    .jumbotron p {
-        font-size: 1.3rem;
-    }
-    .jumbotron button {
-        font-size: 12px;
-        padding: 0.4rem 0.8rem;
-        margin-top: 1rem;
     }
 }
 

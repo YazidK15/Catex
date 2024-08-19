@@ -60,5 +60,8 @@ function toggleMenu() {
         
     navbar.classList.toggle('active');
     burgerMenu.classList.toggle('active');
+    document.body.classList.toggle('menu-active');
+
 }
         
+
