@@ -180,6 +180,7 @@ header {
     width: 75%;
 }
 .jumbotron p {
+    font-weight: 600;
     font-size: 4rem;
     color: white;
 }
