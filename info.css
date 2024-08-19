@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins;
 }
-
 img {
     max-width: 100%;
     height: auto;
 }
 
 /* Header */
-
 header {
     background-color: white;
     color: black;
@@ -24,7 +21,6 @@ header {
     position: relative; 
     z-index: 1;
 }
-
 #navbar {
     display: flex;
     align-items: center;
@@ -35,46 +31,38 @@ header {
     z-index: 1; 
 
 }
-
 #navigation_links {
     display: flex;
     flex-direction: row;
     list-style: none;
     margin-left: auto;
 }
-
 #navigation_links a {
     margin-right: 2rem;
     color: black;
 }
-
 #navigation_links a:hover {
     color: rgb(0, 149, 0);
     transition: color 0.3s ease;
 }
-
 .phone_number {
     pointer-events: none;
 }
-
 .brand_name {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-
 .brand_name img {
     max-height: 100%; 
     height: 60px; 
     object-fit: contain; 
 }
-
 .nav_link {
     text-decoration: none;
     color: white;
     margin-right: 10px;
 }
-
 .divider {
     margin-right: 10px;
     border-right: 1px solid rgb(0, 0, 0);
@@ -87,7 +75,6 @@ header {
     cursor: pointer;
     margin-left: 1rem;
 }
-
 .burger-menu div {
     width: 25px;
     height: 3px;
@@ -100,11 +87,9 @@ header {
     .burger-menu{
         display: flex;
     }
-
     .divider {
         display: none;
     }
-
     #navbar {
         display: flex;
         align-items: center;
@@ -114,7 +99,6 @@ header {
         position: relative;
         z-index: 1;
     }
-
     #navigation_links {
         display: flex;
         flex-direction: column;
@@ -133,20 +117,16 @@ header {
         transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; 
         z-index: 1000; 
     }
-
     #navigation_links a {
         margin-bottom: 1rem;
     }
-
     #navbar.active #navigation_links {
         opacity: 1;
         max-height: 50vh; 
     }
-
     .burger-menu.active div {
         background-color: green;
     }
-
     .brand_name {
         position: absolute;
         left: 50%;
@@ -161,26 +141,21 @@ header {
     }
 }
 
-
-
 /* Main */
 main {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
 .section_info {
     padding: 6rem 0;
     margin: auto;
     width: 80%;
     line-height: 1.7rem;
 }
-
 .section_info h1 {
     margin-bottom: 3rem;
 }
-
 .jumbotron_info {
     background-image: url(./assets/images/mainn.webp);
     background-size: cover;
@@ -189,14 +164,12 @@ main {
     height: 70vh;
 }
 
-
 /* Conteneur principal */
 .section_container {
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(231, 231, 231);
 }
-
 .process-container{
     flex: 1 1 calc(25%);
     display: flex;
@@ -206,32 +179,26 @@ main {
     border-top: 1px solid rgb(213, 213, 213);
     border-bottom: 1px solid rgb(213, 213, 213);
 }
-
 .process-container h2 {
     margin-bottom: 2rem;
 }
-
 .process-text {
     width: 70%;
     text-align: center;
 }
-
 .process-container img {
     width: 100%; 
     height: 42vh; 
     display: block; 
     object-fit: cover;
 }
-
 .contact_info {
     background-color: rgb(213, 213, 213);
     color: white;
 }
-
 .contact_info h1 {
     margin: 3rem 0;
 }
-
 .contact_info button {
     border: none;
     border-radius: 5px;
@@ -244,7 +211,6 @@ main {
     margin-bottom: 3rem;
     font-size: 1.1rem;
 }
-
 .contact_info button:hover{
     background-color: green;
     color: white;
@@ -256,42 +222,34 @@ main {
         font-size: 1.2rem; 
         line-height: 1.2; 
     }
-
     .section_info p {
         font-size: 0.7rem; 
     }
-
     .process-container {
         flex: 1 1 100%; 
         border-bottom: 1px solid rgb(213, 213, 213); 
     }
-
     .process-container img {
         height: auto; 
         max-height: 200px; 
     }
-
     .process-text {
         width: 100%; 
         font-size: 0.7rem; 
         text-align: center; 
         margin-top: 0.5rem; 
     }
-
     .contact_info {
         padding: 1rem; 
     }
-
     .contact_info h1 {
         font-size: 1.4rem; 
     }
-
     .contact_info button {
         padding: 0.4rem 0.8rem; 
         font-size: 0.7rem; 
     }
 }
-
 
 /* Responsive adjustments for smartphones (768px and below) */
 @media (max-width: 768px) {
@@ -301,32 +259,25 @@ main {
     .section_info p{
         font-size: 0.8rem;
     }
-
-
     .section_container {
         flex-wrap: wrap
     }
-
     .process-container {
         flex: 1 1 calc(50%); 
         border-bottom: none;
     }
-
     .process-container:nth-of-type(4) { 
         order: 2;
     }
-
     .process-text {
         width: 70%; 
         font-size: 0.8rem;
         text-align: center; 
         margin-top: 1rem; 
     }
-
     .process-container img {
         height: 30vh; 
     }
-
     .contact_info h1{
         font-size: 1.4rem;
     }
@@ -335,7 +286,6 @@ main {
         padding: 5px 10px;
         width: 40%;
     }
-
     .jumbotron_info {
         background-image: url(./assets/images/mainn.webp);
         background-size: cover; 
@@ -346,8 +296,6 @@ main {
         background-repeat: no-repeat; 
     }
 }
-
-
 
 /* Footer */
 /* Top left */
@@ -360,42 +308,34 @@ main {
     align-items: center;
     padding: 1.5rem 4rem;
 }
-
-
 .description_footer {
     display: flex;
     flex-direction: column;
 }
-
 .description_footer > p{
     margin-left :30px;
     margin-bottom: 15px;
 }
-
 .footer_title, .footer_number, .footer_adress{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
-
 .footer_title {
     font-weight: bold;
     display: flex;
     font-size: 1.2rem;
 }
-
 .footer_title img {
     width: 30px;
     height: 30px;
     margin-right: 20px;
 }
-
 .footer_number img, .footer_adress img {
     min-width: 20px;
     height: 20px;
     margin-right: 2px;
 }
-
 
 /* Mentions légales */
 .footer_mentions {
@@ -403,23 +343,19 @@ main {
     flex-direction: column;
     margin-left: 30px;
 }
-
 .footer_mentions li {
     list-style: none;
 }
-
 .footer_mentions a{
     color: white; 
     text-decoration: none; 
     list-style: none;
     margin: 1px 0;
 }
-
 .footer_mentions a:hover {
     color: green;
     transition: color 0.4s ease;
 }
-
 
 /* Bot */
 .bot_footer {
@@ -432,7 +368,6 @@ main {
     font-size: 0.8rem;
     padding : 10px 4.4rem;
 }
-
 #map {
     height: 28vh; 
     width: 60vh;  
@@ -444,7 +379,6 @@ main {
         flex-direction: column; 
         padding: 1rem;
     }
-
     .description_footer{
         align-items: center;
         text-align: center;
@@ -454,33 +388,23 @@ main {
     .description_footer > p{
         margin-left : 0px;
     }
-
-
     #map {
         width: 100%; 
     }
-
     .footer_mentions {
         align-items: center;
         margin-left: 0;
     }
-
     .bot_footer {
         padding: 5px 20px;
     }
 }
-
-
-
 /* Icones */
-
 .icon {
     color: green;
     margin-right: 0.5rem;
 }
-
 /* Fleche */
-
 .back-to-top {
     position: fixed;
     bottom: 5rem;
@@ -497,10 +421,4 @@ main {
 }
 .back-to-top:hover {
     background-color: rgba(0, 128, 0, 0.627);
-}
-
-@media (max-width: 1024px) {
-    .back-to-top {
-        display: none !important; 
-    }
 }

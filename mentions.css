@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins;
 }
-
 img {
     max-width: 100%;
     height: auto;
 }
-
 body {
     min-height: 100vh;
 	display: grid;
@@ -19,7 +16,6 @@ body {
 }
 
 /* Header */
-
 header {
     background-color: white;
     color: black;
@@ -30,7 +26,6 @@ header {
     position: relative; 
     z-index: 1;
 }
-
 #navbar {
     display: flex;
     align-items: center;
@@ -39,48 +34,39 @@ header {
     margin: 0 auto;
     position: relative;
     z-index: 1; 
-
 }
-
 #navigation_links {
     display: flex;
     flex-direction: row;
     list-style: none;
     margin-left: auto;
 }
-
 #navigation_links a {
     margin-right: 2rem;
     color: black;
 }
-
 #navigation_links a:hover {
     color: rgb(0, 149, 0);
     transition: color 0.3s ease;
 }
-
 .phone_number {
     pointer-events: none;
 }
-
 .brand_name {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-
 .brand_name img {
     max-height: 100%; 
     height: 60px; 
     object-fit: contain; 
 }
-
 .nav_link {
     text-decoration: none;
     color: white;
     margin-right: 10px;
 }
-
 .divider {
     margin-right: 10px;
     border-right: 1px solid rgb(0, 0, 0);
@@ -93,7 +79,6 @@ header {
     cursor: pointer;
     margin-left: 1rem;
 }
-
 .burger-menu div {
     width: 25px;
     height: 3px;
@@ -101,16 +86,13 @@ header {
     margin: 4px 0;
     transition: background-color 0.3s ease;
 }
-
 @media (max-width: 1024px) {
     .burger-menu{
         display: flex;
     }
-
     .divider {
         display: none;
     }
-
     #navbar {
         display: flex;
         align-items: center;
@@ -120,7 +102,6 @@ header {
         position: relative;
         z-index: 1;
     }
-
     #navigation_links {
         display: flex;
         flex-direction: column;
@@ -139,35 +120,28 @@ header {
         transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; 
         z-index: 1000; 
     }
-
     #navigation_links a {
         margin-bottom: 1rem;
     }
-
     #navbar.active #navigation_links {
         opacity: 1;
         max-height: 50vh; 
     }
-
     .burger-menu.active div {
         background-color: green;
     }
-
     .brand_name {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
     }
 }
-
 @media (min-width: 1025px) {
     .brand_name {
         position: static;
         transform: none;
     }
 }
-
-
 
 /* Footer */
 /* Top left */
@@ -180,70 +154,56 @@ header {
     align-items: center;
     padding: 1.5rem 4rem;
 }
-
-
 .description_footer {
     display: flex;
     flex-direction: column;
 }
-
 .description_footer > p{
     margin-left :30px;
     margin-bottom: 15px;
 }
-
 .footer_title, .footer_number, .footer_adress{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
-
 .footer_title {
     font-weight: bold;
     display: flex;
     font-size: 1.2rem;
 }
-
 .footer_title img {
     width: 30px;
     height: 30px;
     margin-right: 20px;
 }
-
 .footer_number img, .footer_adress img {
     min-width: 20px;
     height: 20px;
     margin-right: 2px;
 }
 
-
 /* Mentions légales */
-
 .footer_mentions {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
 }
-
 .footer_mentions li {
     list-style: none;
 }
-
 .footer_mentions a{
     color: white; 
     text-decoration: none; 
     list-style: none;
     margin: 1px 0;
 }
-
 .footer_mentions a:hover {
     color: green;
     transition: color 0.4s ease;
 }
 
-
 /* Bot */
-
 .bot_footer {
     background-color: black;
     color: white;
@@ -254,7 +214,6 @@ header {
     font-size: 0.8rem;
     padding : 10px 4.4rem;
 }
-
 #map {
     height: 28vh; 
     width: 60vh;  
@@ -266,7 +225,6 @@ header {
         flex-direction: column; 
         padding: 1rem;
     }
-
     .description_footer{
         align-items: center;
         text-align: center;
@@ -276,33 +234,25 @@ header {
     .description_footer > p{
         margin-left : 0px;
     }
-
-
     #map {
         width: 100%; 
     }
-
     .footer_mentions {
         align-items: center;
         margin-left: 0;
     }
-
     .bot_footer {
         padding: 5px 20px;
     }
 }
 
-
-
 /* Icones */
-
 .icon {
     color: green;
     margin-right: 0.5rem;
 }
 
 /* Fleche */
-
 .back-to-top {
     position: fixed;
     bottom: 5rem;
@@ -319,10 +269,4 @@ header {
 }
 .back-to-top:hover {
     background-color: rgba(0, 128, 0, 0.627);
-}
-
-@media (max-width: 1024px) {
-    .back-to-top {
-        display: none !important; 
-    }
 }
