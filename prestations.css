@@ -449,32 +449,24 @@ main {
   .container .back{
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg);
-      -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d;
   }
   
   .container .front{
       -webkit-transform: rotateY(0deg);
               transform: rotateY(0deg);
-      -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d;
   }
   
   .container:hover .back{
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
   }
   
   .container:hover .front{
     -webkit-transform: rotateY(-180deg);
             transform: rotateY(-180deg);
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
   }
   
-  .front .inner p{
+  .inner p{
     font-size: 2rem;
     margin-bottom: 2rem;
     position: relative;
@@ -493,13 +485,14 @@ main {
     bottom: -.75rem;
   }
   
-  .front .inner span{
-    color: rgba(255,255,255,0.7);
-    font-family: 'Montserrat';
-    font-weight: 300;
-  }
-  
   @media screen and (max-width: 64rem){
+    .front .inner p{
+        color: black;
+        font-weight: bold;
+    }
+    .front::after {
+        background: none; /* Retire le filtre noir */
+    }
     .col{
       width: calc(33.333333% - 2rem);
     }
