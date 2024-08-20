@@ -368,8 +368,7 @@ main {
               perspective: 1000px;
   }
   
-  .front,
-  .back{
+  .front, .back{
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
     border-radius: 10px;
@@ -394,6 +393,10 @@ main {
     background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
     background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
     background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   
   .front:after{
@@ -420,13 +423,6 @@ main {
       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
   }
   
-  .back{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-  }
-  
   .inner{
       -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
               transform: translateY(-50%) translateZ(60px) scale(0.94);
@@ -441,6 +437,7 @@ main {
       -webkit-perspective: inherit;
               perspective: inherit;
       z-index: 2;
+    
   }
   
   .container .back{

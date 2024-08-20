@@ -70,3 +70,17 @@ slider = document.getElementById("slider");
 function moveDivisor() { 
 	divisor.style.width = slider.value+"%";
 }
+
+document.querySelectorAll('.col').forEach(card => {
+    card.addEventListener('touchstart', function() {
+        this.classList.toggle('hover');
+    });
+});
+
+    const cards = document.querySelectorAll('.col');
+
+    cards.forEach(card => {
+        card.addEventListener('click', function() {
+            this.classList.toggle('hover');
+        });
+    });
