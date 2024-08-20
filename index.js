@@ -71,16 +71,13 @@ function moveDivisor() {
 	divisor.style.width = slider.value+"%";
 }
 
-document.querySelectorAll('.col').forEach(card => {
-    card.addEventListener('touchstart', function() {
-        this.classList.toggle('hover');
-    });
-});
 
     const cards = document.querySelectorAll('.col');
 
     cards.forEach(card => {
         card.addEventListener('click', function() {
+            // Toggle the hover class on click
             this.classList.toggle('hover');
         });
     });
+
