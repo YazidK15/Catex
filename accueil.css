@@ -481,12 +481,6 @@ header {
         text-align: center;
         margin: 3rem auto;
     }
-    .clef_image {
-        flex: none;
-        width: 100%;
-        height: 50vh; 
-        background-attachment: scroll; 
-    }
     .clef_text {
         padding: 1rem;
         margin-bottom: 1rem;
@@ -503,13 +497,15 @@ header {
         width: auto;
         font-size: 1rem;
     }
+    .div#comparison {
+        flex: none;
+        width: 100%;
+        height: 50vh; 
+    }
 }
 @media (max-width: 768px) {
     .clef_section {
         margin: 2rem auto;
-    }
-    .clef_image {
-        height: 40vh;
     }
     .clef_text h1 {
         font-size: 1.5rem;
