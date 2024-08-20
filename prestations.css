@@ -329,13 +329,6 @@ main {
 
 
 
-
-*{
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  
   .wrapper{
     width: 90%;
     margin: 0 auto;
@@ -351,6 +344,7 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 3rem;
   }
   
   .col{
@@ -389,9 +383,9 @@ main {
   
   .back{
     background: green;
-    background: -webkit-linear-gradient(45deg,  rgb(0, 95, 0) 0%,#8bb986 100%);
-    background: -o-linear-gradient(45deg,  rgb(0, 95, 0) 0%,#8bb986 100%);
-    background: linear-gradient(45deg,  rgb(0, 95, 0) 0%,#8bb986 100%);
+    background: -webkit-linear-gradient(45deg,  rgb(0, 0, 0) 0%,#517e4b 100%);
+    background: -o-linear-gradient(45deg,  rgb(0, 0, 0) 0%,#517e4b 100%);
+    background: linear-gradient(45deg,  rgb(0, 0, 0) 0%,#517e4b 100%);
   }
   
   .front:after{
@@ -466,7 +460,7 @@ main {
     position: relative;
   }
   .back .inner p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
   }
   
@@ -490,6 +484,10 @@ main {
     .col{
       width: calc(33.333333% - 2rem);
     }
+    .back .inner p {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
   }
   
   @media screen and (max-width: 48rem){
