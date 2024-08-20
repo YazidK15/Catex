@@ -73,12 +73,15 @@ function moveDivisor() {
 
 document.querySelectorAll('.container').forEach((container) => {
     container.addEventListener('click', function () {
-        // Retirer la classe 'clicked' des autres conteneurs si vous voulez une seule carte activée à la fois
-        document.querySelectorAll('.container').forEach((el) => {
-            if (el !== container) el.classList.remove('clicked');
-        });
+        // Vérifier si l'élément cliqué est déjà ouvert
+        const isAlreadyOpen = container.classList.contains('clicked');
 
-        // Ajouter ou retirer la classe 'clicked' sur l'élément cliqué
-        container.classList.toggle('clicked');
+        // Retirer la classe 'clicked' de tous les conteneurs
+        document.querySelectorAll('.container').forEach((el) => el.classList.remove('clicked'));
+
+        // Si l'élément cliqué n'était pas déjà ouvert, l'ouvrir
+        if (!isAlreadyOpen) {
+            container.classList.add('clicked');
+        }
     });
 });
