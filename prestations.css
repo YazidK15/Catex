@@ -500,9 +500,6 @@ main {
   }
   
   @media screen and (max-width: 64rem){
-    .front::after {
-        background: none; /* Retire le filtre noir */
-    }
     .col{
       width: calc(33.333333% - 2rem);
     }
