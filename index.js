@@ -72,12 +72,3 @@ function moveDivisor() {
 }
 
 
-    const cards = document.querySelectorAll('.col');
-
-    cards.forEach(card => {
-        card.addEventListener('click', function() {
-            // Toggle the hover class on click
-            this.classList.toggle('hover');
-        });
-    });
-
