@@ -266,6 +266,7 @@ header {
     background-position: center;
     background-attachment: fixed;
     height: 60vh;
+    border-radius: 10px;
 }
 .about_text {
     flex: 1;
@@ -288,7 +289,7 @@ header {
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 11rem;
     text-align: center;
     transition: background-color 0.6s ease;
@@ -497,7 +498,7 @@ header {
         width: auto;
         font-size: 1rem;
     }
-    .div#comparison {
+    #comparison {
         flex: none;
         width: 100%;
         height: 50vh; 
@@ -522,9 +523,6 @@ header {
 @media (max-width: 480px) {
     .clef_section {
         margin: 1.5rem auto;
-    }
-    .clef_image {
-        height: 30vh;
     }
     .clef_text h1 {
         font-size: 1.3rem;
@@ -858,8 +856,9 @@ div#comparison {
     height: 30vw;
     max-width: 600px;
     max-height: 600px;
+    min-height: 300px;
     overflow: hidden; 
-    border-radius: 20px;
+    border-radius: 10px;
 }
   div#comparison figure { 
     background-image: url(./assets/images/clefapres.webp); 
@@ -932,3 +931,9 @@ div#comparison {
       background: rgba(255,255,255,0.5);
      }
   
+     @media (max-width: 768px) {
+        div#comparison { 
+            height: 50vw; /* Augmenter la hauteur spécifiquement pour les petits écrans */
+            max-height: none; /* Supprimer la contrainte de hauteur max pour les petits écrans */
+        }
+    }
