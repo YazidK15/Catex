@@ -933,7 +933,7 @@ div#comparison {
   
      @media (max-width: 768px) {
         div#comparison { 
-            height: 50vw; /* Augmenter la hauteur spécifiquement pour les petits écrans */
             max-height: none; /* Supprimer la contrainte de hauteur max pour les petits écrans */
         }
     }
+
