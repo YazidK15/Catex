@@ -71,3 +71,10 @@ function moveDivisor() {
 	divisor.style.width = slider.value+"%";
 }
 
+container.addEventListener('click', function () {
+    // Retirer la classe 'clicked' des autres conteneurs pour s'assurer qu'un seul est activé à la fois
+    document.querySelectorAll('.container').forEach((el) => el.classList.remove('clicked'));
+
+    // Ajouter ou retirer la classe 'clicked' sur l'élément cliqué
+    container.classList.toggle('clicked');
+});

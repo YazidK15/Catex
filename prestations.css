@@ -476,6 +476,14 @@ main {
     margin: 0 auto;
     bottom: -.75rem;
   }
+
+  .container.clicked .front {
+    transform: rotateY(-180deg);
+}
+
+.container.clicked .back {
+    transform: rotateY(0deg);
+}
   
   @media screen and (max-width: 64rem){
     .front::after {
