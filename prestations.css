@@ -382,15 +382,16 @@ main {
       min-height: 400px;
       height: auto;
       border-radius: 10px;
+      font-weight: bold;
       color: #fff;
       font-size: 1.5rem;
   }
   
   .back{
     background: green;
-    background: -webkit-linear-gradient(45deg,  rgb(0, 95, 0) 0%,#11a700 100%);
-    background: -o-linear-gradient(45deg,  rgb(0, 95, 0) 0%,#11a700 100%);
-    background: linear-gradient(45deg,  rgb(0, 95, 0) 0%,#11a700 100%);
+    background: -webkit-linear-gradient(45deg,  rgb(0, 95, 0) 0%,#8bb986 100%);
+    background: -o-linear-gradient(45deg,  rgb(0, 95, 0) 0%,#8bb986 100%);
+    background: linear-gradient(45deg,  rgb(0, 95, 0) 0%,#8bb986 100%);
   }
   
   .front:after{
@@ -472,9 +473,9 @@ main {
   .front .inner p:after{
     content: '';
     width: 4rem;
-    height: 2px;
+    height: 4px;
     position: absolute;
-    background: #C6D4DF;
+    background: #ffffff;
     display: block;
     left: 0;
     right: 0;
@@ -492,6 +493,9 @@ main {
   }
   
   @media screen and (max-width: 48rem){
+    .front, .back{
+        min-height: 200px;
+    }
     .col{
       width: calc(50% - 2rem);
     }
