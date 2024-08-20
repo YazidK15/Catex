@@ -55,7 +55,7 @@ header {
 }
 .brand_name img {
     max-height: 100%; 
-    height: 60px; 
+    height: 80px; 
     object-fit: contain; 
 }
 .nav_link {
