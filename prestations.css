@@ -398,19 +398,6 @@ main {
     left: 0;
     width: 100%;
   }
-  
-  .front::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(47, 47, 47, 0.6); /* Filtre noir semi-transparent */
-    border-radius: 10px;
-    z-index: 2; /* Assurez-vous que le filtre est au-dessus du contenu */
-    pointer-events: none; /* Permet les clics à passer */
-}
 
   .container:hover .front,
   .container:hover .back{
