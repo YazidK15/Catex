@@ -137,7 +137,7 @@ header {
         transform: translateX(-50%);
     }
     body.menu-active {
-        overflow: hidden; /* Désactiver le défilement */
+        overflow: hidden; 
     }
 }
 @media (min-width: 1024px) {
@@ -384,9 +384,9 @@ main {
   
   .back{
     background: green;
-    background: -webkit-linear-gradient(45deg,  rgb(0, 0, 0) 0%,#517e4b 100%);
-    background: -o-linear-gradient(45deg,  rgb(0, 0, 0) 0%,#517e4b 100%);
-    background: linear-gradient(45deg,  rgb(0, 0, 0) 0%,#517e4b 100%);
+    background: -webkit-linear-gradient(45deg,  rgb(179, 202, 163) 0%,green 100%);
+    background: -o-linear-gradient(45deg,  rgb(179, 202, 163) 0%,green 100%);
+    background: linear-gradient(45deg,  rgb(179, 202, 163) 0%,green 100%);
   }
   
   .front:after{
