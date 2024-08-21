@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Explorez les transformations réussies par notre agence de rénovation. Avant-après de projets de rénovation intérieure et extérieure pour inspirer vos idées.">
+    <meta name="author" content="Yazid Kassous" />
+    <meta name="copyright" content="Yazid Kassous" />
+    <meta name="robots" content="index"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./metiers.css">
+    <link rel="icon" href="./assets/images/icon.webp">
+    <title>Nos métiers</title>
+</head>
+<body>
+    <div id="top"></div>
+    <header>
+        <section id="navbar">
+            <div class="brand_name">
+                <a href="index.html">
+                    <img src="./assets/images/logo.webp" alt="logo de l'entreprise">
+                </a>
+            </div>
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="navigation_links">
+                <a class="nav_link" href="index.html">Accueil</a>
+                <a class="nav_link" href="info.html">À propos</a>
+                <a class="nav_link job_link" href="metiers.html">Nos métiers</a>
+                <a class="nav_link" href="prestations.html">Nos prestations</a>
+                <div class="divider"></div>
+                <a class="nav_link" href="contact.html">Contact</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="section_info">
+            <h1>Nos prestations</h1>
+            <p>Chez Catex Environnement nous pouvons trasnformer vos rêves en réalité.</p>
+        </div>
+        
+        <div class="wrapper">
+            <div class="cols">
+                <div class="col">
+                    <div class="container">
+                        <div class="front" style="background-image: url(./assets/images/menuiserie.webp)">
+                            <div class="inner">
+                                <p>Menuiserie</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Création et installation de structures en bois comme des portes, fenêtres, escaliers et meubles. Le menuisier travaille aussi bien en rénovation qu'en construction neuve.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="front" style="background-image: url(./assets/images/maconnerie.webp)">
+                            <div class="inner">
+                                <p>Maçonnerie</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Construction de murs, fondations, cloisons et dalles en briques, parpaings ou pierres. Le maçon assure la solidité et la stabilité des bâtiments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Continuez avec les autres cartes -->
+                <div class="col">
+                    <div class="container">
+                        <div class="front" style="background-image: url(./assets/images/platerie.webp)">
+                            <div class="inner">
+                                <p>Plâterie</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Pose et finition des cloisons et plafonds en plâtre. Le plâtrier réalise également les enduits pour préparer les surfaces avant la peinture.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Continuez avec les autres cartes -->
+                <div class="col">
+                    <div class="container">
+                        <div class="front" style="background-image: url(./assets/images/plomberie.webp)">
+                            <div class="inner">
+                                <p>Plomberie</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Installation et maintenance des systèmes de distribution d'eau, d'évacuation et de chauffage. Le plombier garantit le bon fonctionnement des réseaux sanitaires.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="front" style="background-image: url(./assets/images/electricite.webp)">
+                            <div class="inner">
+                                <p>Electricité</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Mise en place et entretien des installations électriques pour l'éclairage, les prises, et les appareils. L'électricien assure la sécurité et la conformité des installations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="front" style="background-image: url(./assets/images/design.webp)">
+                            <div class="inner">
+                                <p>Couverture</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Pose et réparation des toitures, qu'il s'agisse de tuiles, ardoises ou autres matériaux. Le couvreur garantit l'étanchéité des toits et la protection des bâtiments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="front" style="background-image: url(./assets/images/revetement.webp)">
+                            <div class="inner">
+                                <p>Revêtement</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Application de finitions sur les sols et murs comme le carrelage, la peinture, le parquet ou les tapisseries. Le spécialiste du revêtement embellit et protège les surfaces.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="front" style="background-image: url(./assets/images/isolation.webp)">
+                            <div class="inner">
+                                <p>Isolation</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Installation de matériaux pour améliorer l'efficacité énergétique des bâtiments. L'isolateur thermique réduit les pertes de chaleur et améliore le confort acoustique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Continuez avec les autres cartes -->
+            </div>
+        </div>
+        <div class="contact_info">
+            <h1>Créez votre maison de rêve. <br> Contactez-nous.</h1>
+            <a href="contact.html"><button>Obtenir un devis gratuit</button></a>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class='top_footer'>
+            <div class='description_footer'>
+                <div class='footer_title'>
+                    <div>
+                        <img src="./assets/images/logoo.webp"alt="logo CATEX" />
+                    </div>
+                    <h4>Catex</h4>
+                </div>
+                <div class='footer_number'>
+                    <div>
+                        <span class="material-symbols-outlined icon">call</span>
+                    </div>
+                    <p>06.21.13.64.57</p>
+                </div>
+                <p>CATEX Environnement est une entreprise générale du bâtiment.</p>
+                <div class='footer_adress'>
+                    <div>
+                        <span class="material-symbols-outlined icon">explore_nearby</span>
+                    </div>
+                    <p>68 rue du vieil dieu, Comines (59560)</p>
+                </div>
+                <ul class="footer_mentions">
+                    <li><a href="mentions.html">Mentions Légales</a></li>
+                    <li><a href="mentions.html">Politique de confidentialité</a></li>
+                </ul>
+            </div>  
+            <div id="map" class="map_footer"></div>
+        </div>
+        <div class='bot_footer'>
+            <div><p>© 2024 CATEX, Tous droits reservés.</p></div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top">&#x2191;</a>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

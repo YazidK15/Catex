@@ -204,7 +204,7 @@ main {
     object-fit: cover;
 }
 .contact_info {
-    background-color: rgb(213, 213, 213);
+    background-color: rgb(96, 96, 96);
     color: white;
 }
 .contact_info h1 {
@@ -259,6 +259,7 @@ main {
     .contact_info button {
         padding: 0.4rem 0.8rem; 
         font-size: 0.7rem; 
+        width: 60%;
     }
 }
 
@@ -316,7 +317,7 @@ main {
     .contact_info button {
         font-size: 0.9rem;
         padding: 5px 10px;
-        width: 40%;
+        width: 60%;
     }
     .jumbotron_info {
         background-image: url(./assets/images/mainn.webp);

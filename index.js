@@ -73,15 +73,9 @@ function moveDivisor() {
 
 document.querySelectorAll('.container').forEach((container) => {
     container.addEventListener('click', function () {
-        // Vérifier si l'élément cliqué est déjà ouvert
-        const isAlreadyOpen = container.classList.contains('clicked');
-
-        // Retirer la classe 'clicked' de tous les conteneurs
-        document.querySelectorAll('.container').forEach((el) => el.classList.remove('clicked'));
-
-        // Si l'élément cliqué n'était pas déjà ouvert, l'ouvrir
-        if (!isAlreadyOpen) {
-            container.classList.add('clicked');
-        }
+        document.querySelectorAll('.container').forEach((el) => {
+            if (el !== container) el.classList.remove('clicked');
+        });
+        container.classList.toggle('clicked');
     });
 });

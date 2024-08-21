@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Explorez les transformations réussies par notre agence de rénovation. Avant-après de projets de rénovation intérieure et extérieure pour inspirer vos idées.">
+    <meta name="description" content="Bienvenue sur Catex Renovation, découvrez nos travaux et services réalisés. Devis rapide et service client à votre écoute.">
+    <meta name="keywords" content="rénovation maison, rénovation appartement, transformation intérieure, rénovation extérieure, agence de rénovation, travaux de rénovation, devis rénovation">
     <meta name="author" content="Yazid Kassous" />
     <meta name="copyright" content="Yazid Kassous" />
     <meta name="robots" content="index"/>
@@ -14,7 +15,7 @@
     <link rel="icon" href="./assets/images/icon.webp">
     <title>Nos prestations</title>
 </head>
-<body>
+<body>        
     <div id="top"></div>
     <header>
         <section id="navbar">
@@ -31,10 +32,10 @@
             <div id="navigation_links">
                 <a class="nav_link" href="index.html">Accueil</a>
                 <a class="nav_link" href="info.html">À propos</a>
-                <a class="nav_link service_link" href="prestations.html">Nos prestations</a>
-                <a class="nav_link" href="contact.html">Contact</a>
+                <a class="nav_link" href="metiers.html">Nos métiers</a>
+                <a class="nav_link prestation_link" href="prestations.html">Nos prestations</a>
                 <div class="divider"></div>
-                <a class="phone_number">06 21 13 64 57</a>
+                <a class="nav_link" href="contact.html">Contact</a>
             </div>
         </section>
     </header>
@@ -43,133 +44,92 @@
             <h1>Nos prestations</h1>
             <p>Chez Catex Environnement nous pouvons trasnformer vos rêves en réalité.</p>
         </div>
-        
-        <div class="wrapper">
-            <div class="cols">
-                <div class="col">
-                    <div class="container">
-                        <div class="front" style="background-image: url(./assets/images/menuiserie.webp)">
-                            <div class="inner">
-                                <p>Menuiserie</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>Création et installation de structures en bois comme des portes, fenêtres, escaliers et meubles. Le menuisier travaille aussi bien en rénovation qu'en construction neuve.</p>
-                            </div>
-                        </div>
+        <div class="prestations_container">
+            <div class="top_prestations">
+                <div class="prestations_box">
+                    <div class="comparison_container">
+                        <figure>
+                            <div class="divisor"></div>
+                        </figure>
+                        <input type="range" min="0" max="100" value="50" class="slider" oninput="moveDivisor(this)">
+                    </div>
+                    <div>
+                        <h2>Extérieur</h2>
+                        <p>Nous avons transformé l’extérieur de cette maison en un espace moderne et accueillant, alliant esthétisme & fonctionnalité pour une vie en plein air.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="container">
-                        <div class="front" style="background-image: url(./assets/images/maconnerie.webp)">
-                            <div class="inner">
-                                <p>Maçonnerie</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>Construction de murs, fondations, cloisons et dalles en briques, parpaings ou pierres. Le maçon assure la solidité et la stabilité des bâtiments.</p>
-                            </div>
-                        </div>
+                <div class="prestations_box">
+                    <div class="comparison_container">
+                        <figure>
+                            <div class="divisor"></div>
+                        </figure>
+                        <input type="range" min="0" max="100" value="50" class="slider" oninput="moveDivisor(this)">
+                    </div>
+                    <div>
+                        <h2>Garage</h2>
+                        <p>Nous avons rénové ce garage en un espace moderne et polyvalent, alliant fonctionnalité et design, parfait pour le stockage ou les loisirs.</p>
                     </div>
                 </div>
-                <!-- Continuez avec les autres cartes -->
-                <div class="col">
-                    <div class="container">
-                        <div class="front" style="background-image: url(./assets/images/platerie.webp)">
-                            <div class="inner">
-                                <p>Plâterie</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>Pose et finition des cloisons et plafonds en plâtre. Le plâtrier réalise également les enduits pour préparer les surfaces avant la peinture.</p>
-                            </div>
-                        </div>
+                <div class="prestations_box">
+                    <div class="comparison_container">
+                        <figure>
+                            <div class="divisor"></div>
+                        </figure>
+                        <input type="range" min="0" max="100" value="50" class="slider" oninput="moveDivisor(this)">
+                    </div>
+                    <div>
+                        <h2>Garage</h2>
+                        <p>Nous avons rénové ce garage en un espace moderne et polyvalent, alliant fonctionnalité et design, parfait pour le stockage ou les loisirs.</p>
                     </div>
                 </div>
-                <!-- Continuez avec les autres cartes -->
-                <div class="col">
-                    <div class="container">
-                        <div class="front" style="background-image: url(./assets/images/plomberie.webp)">
-                            <div class="inner">
-                                <p>Plomberie</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>Installation et maintenance des systèmes de distribution d'eau, d'évacuation et de chauffage. Le plombier garantit le bon fonctionnement des réseaux sanitaires.</p>
-                            </div>
-                        </div>
+            </div>
+            
+            <div class="bot_prestations">
+                <div class="prestations_box">
+                    <div class="comparison_container">
+                        <figure>
+                            <div class="divisor"></div>
+                        </figure>
+                        <input type="range" min="0" max="100" value="50" class="slider" oninput="moveDivisor(this)">
+                    </div>
+                    <div>
+                        <h2>Cuisine</h2>
+                        <p>Nous avons transformé cette cuisine en un espace moderne et fonctionnel, alliant élégance, confort et praticité, pour un quotidien amélioré.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="container">
-                        <div class="front" style="background-image: url(./assets/images/electricite.webp)">
-                            <div class="inner">
-                                <p>Electricité</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>Mise en place et entretien des installations électriques pour l'éclairage, les prises, et les appareils. L'électricien assure la sécurité et la conformité des installations.</p>
-                            </div>
-                        </div>
+                <div class="prestations_box">
+                    <div class="comparison_container">
+                        <figure>
+                            <div class="divisor"></div>
+                        </figure>
+                        <input type="range" min="0" max="100" value="50" class="slider" oninput="moveDivisor(this)">
+                    </div>
+                    <div>
+                        <h2>Extension</h2>
+                        <p>Cette extension de maison crée un espace lumineux, ouvert et moderne, ajoutant confort, style et une touche de sophistication à votre quotidien.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="container">
-                        <div class="front" style="background-image: url(./assets/images/design.webp)">
-                            <div class="inner">
-                                <p>Couverture</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>Pose et réparation des toitures, qu'il s'agisse de tuiles, ardoises ou autres matériaux. Le couvreur garantit l'étanchéité des toits et la protection des bâtiments.</p>
-                            </div>
-                        </div>
+                <div class="prestations_box">
+                    <div class="comparison_container">
+                        <figure>
+                            <div class="divisor"></div>
+                        </figure>
+                        <input type="range" min="0" max="100" value="50" class="slider" oninput="moveDivisor(this)">
+                    </div>
+                    <div>
+                        <h2>Extension</h2>
+                        <p>Cette extension de maison crée un espace lumineux, ouvert et moderne, ajoutant confort, style et une touche de sophistication à votre quotidien.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="container">
-                        <div class="front" style="background-image: url(./assets/images/revetement.webp)">
-                            <div class="inner">
-                                <p>Revêtement</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>Application de finitions sur les sols et murs comme le carrelage, la peinture, le parquet ou les tapisseries. Le spécialiste du revêtement embellit et protège les surfaces.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="container">
-                        <div class="front" style="background-image: url(./assets/images/isolation.webp)">
-                            <div class="inner">
-                                <p>Isolation</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <p>Installation de matériaux pour améliorer l'efficacité énergétique des bâtiments. L'isolateur thermique réduit les pertes de chaleur et améliore le confort acoustique.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Continuez avec les autres cartes -->
             </div>
         </div>
+        
+
         <div class="contact_info">
             <h1>Créez votre maison de rêve. <br> Contactez-nous.</h1>
             <a href="contact.html"><button>Obtenir un devis gratuit</button></a>
         </div>
     </main>
-
-
 
     <footer>
         <div class='top_footer'>
@@ -208,5 +168,17 @@
     <a href="#top" class="back-to-top">&#x2191;</a>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="./index.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="form-handler.js"></script>
+    <script>
+        const sliders = document.querySelectorAll('.slider');
+
+    sliders.forEach((slider) => {
+    slider.addEventListener('input', function() {
+        const divisor = this.parentElement.querySelector('.divisor');
+        divisor.style.width = this.value + "%";
+    });
+});
+    </script>
 </body>
 </html>
