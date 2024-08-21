@@ -329,6 +329,12 @@ input[type=range]:focus::-moz-range-thumb {
     .comparison_container {
         max-height: none;
     }
+    .top_prestations, .bot_prestations {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    margin-bottom: 2rem;
+}
 }
 
 
