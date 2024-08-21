@@ -546,7 +546,7 @@ div#comparison {
     border-radius: 10px;
 }
   div#comparison figure { 
-    background-image: url(./assets/images/clefapres.webp); 
+    background-image: url(./assets/images/clefavant.webp); 
     background-size: cover;
     position: relative;
     font-size: 0;
@@ -559,7 +559,7 @@ div#comparison {
     width: 100%;
   }
   div#comparison figure div { 
-    background-image: url(./assets/images/clefavant.webp);
+    background-image: url(./assets/images/clefapres.webp);
     background-size: cover;
     position: absolute;
     width: 50%; 

@@ -207,7 +207,7 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin: 2rem auto;
 }
 
@@ -222,7 +222,9 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
-
+.prestations_box h2{
+    margin-bottom: 1rem;
+}
 .top_prestations,
 .bot_prestations {
     display: flex;
@@ -233,8 +235,8 @@ main {
 
 .comparison_container {
     width: 100%;
-    height: 50vh; /* Ajustez cette valeur selon les besoins */
-    max-width: 600px;
+    height: 60vh; /* Ajustez cette valeur selon les besoins */
+    max-width: 400px;
     max-height: 600px;
     min-height: 300px;
     overflow: hidden; 
@@ -247,7 +249,6 @@ main {
     background-position: center; 
     background-size: cover;
     background-repeat: no-repeat; 
-
     position: relative;
     align-items: center;
     font-size: 0;
@@ -268,7 +269,7 @@ main {
     position: relative;
     align-items: center;
     font-size: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
     margin: 0;
 }
