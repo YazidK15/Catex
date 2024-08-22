@@ -71,9 +71,34 @@ function moveDivisor() {
 	divisor.style.width = slider.value+"%";
 }
 
-document.querySelectorAll('.container').forEach((container) => {
-    container.addEventListener('click', function () {
-        document.querySelectorAll('.container').forEach((el) => {
+
+
+
+function setupInteractions() {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
+
+    // Detect screen width
+    const isMobile = window.innerWidth < 768;
+
+    // Remove all classes that control interaction
+    document.body.classList.remove('hover');
+    document.body.classList.remove('click');
+
+    if (isMobile && !isTouchDevice) {
+        // Mobile or non-touch device
+        document.body.classList.add('click');
+    } else {
+        // Desktop or touch device
+        document.body.classList.add('hover');
+    }
+}
+
+setupInteractions();
+window.addEventListener('resize', setupInteractions);
+
+document.querySelectorAll('.container').forEach(container => {
+    container.addEventListener('click', function() {
+        document.querySelectorAll('.container').forEach(el => {
             if (el !== container) el.classList.remove('clicked');
         });
         container.classList.toggle('clicked');
