@@ -75,19 +75,18 @@ function moveDivisor() {
 
 
 function setupInteractions() {
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
-
     // Detect screen width
-    const isMobile = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 850;
 
     // Remove all classes that control interaction
     document.body.classList.remove('hover', 'click');
 
-    if (isMobile && !isTouchDevice) {
+    if (isMobile) {
         // Mobile or non-touch device
         document.body.classList.add('click');
     } else {
         // Desktop or touch device
+        document.body.classList.add('hover');
     }
 }
 
