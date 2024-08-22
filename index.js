@@ -81,15 +81,13 @@ function setupInteractions() {
     const isMobile = window.innerWidth < 768;
 
     // Remove all classes that control interaction
-    document.body.classList.remove('hover');
-    document.body.classList.remove('click');
+    document.body.classList.remove('hover', 'click');
 
     if (isMobile && !isTouchDevice) {
         // Mobile or non-touch device
         document.body.classList.add('click');
     } else {
         // Desktop or touch device
-        document.body.classList.add('hover');
     }
 }
 
