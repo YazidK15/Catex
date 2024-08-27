@@ -10,16 +10,16 @@
     <meta name="robots" content="index"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./contact.css">
-    <link rel="icon" href="./assets/images/icon.webp">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="/assets/images/icon.webp">
     <title>Contact</title>
 </head>
 <body>
     <header>
         <section id="navbar">
             <div class="brand_name">
-                <a href="index.html">
-                    <img src="./assets/images/logo.webp" alt="logo de l'entreprise">
+                <a href="/">
+                    <img src="/assets/images/logo.webp" alt="logo de l'entreprise">
                 </a>
             </div>
             <div class="burger-menu">
@@ -28,12 +28,12 @@
                 <div></div>
             </div>
             <div id="navigation_links">
-                <a class="nav_link" href="index.html">Accueil</a>
-                <a class="nav_link" href="info.html">À propos</a>
-                <a class="nav_link" href="metiers.html">Nos métiers</a>
-                <a class="nav_link" href="prestations.html">Nos prestations</a>
+                <a class="nav_link" href="/">Accueil</a>
+                <a class="nav_link" href="/info/">À propos</a>
+                <a class="nav_link" href="/metiers/">Nos métiers</a>
+                <a class="nav_link" href="/prestations/">Nos prestations</a>
                 <div class="divider"></div>
-                <a class="nav_link contact_link" href="contact.html">Contact</a>
+                <a class="nav_link contact_link" href="/contact/">Contact</a>
             </div>
         </section>
     </header>
@@ -49,9 +49,9 @@
             <p class="contact_adress">68 rue du vieil dieu, 59560 Comines</p>
             <p class="contact_email">Enzo.ouad@outlook.fr</p>
             <p class="contact_phone">06 21 13 64 57</p>
-        </div>
+        </div>  
         <div class="form-container">
-            <form class="right_footer" id="contact-form">
+            <form class="right_footer" id="contact-form" method="post">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="surname">Nom*</label>
@@ -85,15 +85,15 @@
         <div class='bot_footer'>
             <ul class="footer_mentions">
                 <li><p>© 2024 CATEX, Tous droits reservés.</p></li>
-                <li><a href="mentions.html">Mentions Légales</a></li>
-                <li><a href="mentions.html">Politique de confidentialité</a></li>
+                <li><a href="/mentions/">Mentions Légales</a></li>
+                <li><a href="/mentions/">Politique de confidentialité</a></li>
             </ul>
         </div>
     </footer>
     <div id="notifications"></div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="form-handler.js"></script>
+    <script src="/form-handler.js"></script>
 
 
 
