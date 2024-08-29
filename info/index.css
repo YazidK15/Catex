@@ -431,6 +431,9 @@ main {
     .bot_footer {
         padding: 5px 20px;
     }
+    .footer_title, .footer_number, .footer_adress{
+        margin-left: -1.8rem;
+    }
 }
 /* Icones */
 .icon {

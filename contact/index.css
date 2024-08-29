@@ -250,6 +250,7 @@ main {
     background-color: black;
     color: white;
     font-weight: bold;
+    font-size: 0.8rem;
     padding : 10px 40px;
 }
 #map {
